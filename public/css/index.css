@@ -22,7 +22,7 @@
 	--syntax-tab-size: 2;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	:root {
 		--color-gray-20: #e0e0e0;
 		--color-gray-50: #C0C0C0;
@@ -35,7 +35,7 @@
 
 		--background-color: #15202b;
 	}
-}
+} */
 
 
 /* Global stylesheet */
@@ -150,7 +150,12 @@ pre:not([class*="language-"]) {
 code {
 	word-break: break-all;
 }
-
+p code {
+	background-color: #e0e0e0;
+	border: 5px solid #e0e0e0;
+	border-radius: 4px;
+	margin: 0 4px;
+}
 /* Header */
 header {
 	display: flex;

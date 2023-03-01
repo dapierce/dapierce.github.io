@@ -10,7 +10,9 @@ Hello!
 
 I'm **David Aaron Pierce**, an artist, occasional coder, and video games liker. I write things here, and maybe sometimes post my artwork and various experiments.
 
-I don't have a huge presence online, and I mostly like to keep it that way. That said, I love to create, and it's nice to have the things I make [on a website that I control](/blog/2023-02-28-building-a-site) (looking at you, social media).
+I don't have a huge presence online, and I mostly like to keep it that way. That said, I love to create, and it's nice to have the things I make [on a website that I control](/blog/2023-02-28-new-website) (looking at you, social media).
+
+That being said, I do have accounts all over the place, covering an assortment of my interests.
 
 ## Find me on
 
