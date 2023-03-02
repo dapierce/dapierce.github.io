@@ -1,46 +1,34 @@
-# eleventy-base-blog v8
+# David🥧
 
-A starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v2.0 release](https://www.11ty.dev/blog/eleventy-v2/)).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/057ee517-cc9d-4846-b5a8-5a1d044f4b88/deploy-status)](https://app.netlify.com/sites/davidpie/deploys)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/802669dd-d5f8-4d49-963d-6d57b257c2a2/deploy-status)](https://app.netlify.com/sites/eleventy-base-blog/deploys)
+My personal website, built from [eleventy-base-blog v8](https://github.com/11ty/eleventy-base-blog).
 
 ## Getting Started
 
 1. Clone this Repository
 
 ```
-git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
+git clone https://github.com/dapierce/davidpie.git
 ```
 
-2. Navigate to the directory
+2. Navigate to the directory and install packages
 
 ```
-cd my-blog-name
-```
-
-3. Have a look at `eleventy.config.js` to see if you want to configure any Eleventy options differently.
-4. Install dependencies
-
-```
+cd davidpie
 npm install
 ```
 
-5. Edit `_data/metadata.js` to change the site data.
-6. Run Eleventy
-
-Generate a production-ready build:
-
-```
-npx @11ty/eleventy
-```
-
-Or build and host locally on a local development server:
+3. Run live updates as you code with a local development server:
 
 ```
 npx @11ty/eleventy --serve
 ```
 
 Or you can run [debug mode](https://www.11ty.dev/docs/debugging/) to see all the internals.
+
+---
+The rest is from [eleventy-base-blog v8](https://github.com/11ty/eleventy-base-blog) `README.md`
 
 ## Features
 
