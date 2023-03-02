@@ -1,7 +1,7 @@
 .hello-box {
 	--color-hello-box: #ffc;
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1.5fr 1fr;
 	justify-items: center;
 	background-color: var(--color-hello-box);
 	color: var(--color-gray-90);
