@@ -115,11 +115,11 @@ p:last-child {
 	margin-bottom: 0;
 }
 p {
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 li {
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 a[href] {
@@ -330,6 +330,13 @@ h2 + .header-anchor {
 }
 /* Unorganized styles from previous home page */
 /* TODO: integrate them better into existing css */
+a:focus {
+  outline: dotted 2px var(--text-color-black);
+}
+a:active {
+  outline: none;
+}
+
 .home-link {
 	text-decoration: none;
 	padding: 4px 4px;
@@ -353,6 +360,9 @@ h2 + .header-anchor {
   background-color: white;
   /* transform: scale(1); */
   box-shadow: none;
+}
+.home-link[href][aria-current="page"] {
+  background-color: white;
 }
 .nav {
   text-align: center;
