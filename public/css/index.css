@@ -148,17 +148,6 @@ main :first-child {
 	margin-top: 0;
 }
 
-header {
-	background: var(--gradient);
-	padding: 1rem 0;
-}
-
-/* header:after {
-	content: "";
-	display: table;
-	clear: both;
-} */
-
 .links-nextprev {
 	list-style: none;
 	border-top: 1px dashed var(--color-gray-20);
@@ -207,6 +196,17 @@ p code {
 }
 
 /* Header */
+header {
+	background: var(--gradient);
+	padding: 1rem 0;
+}
+
+/* header:after {
+	content: "";
+	display: table;
+	clear: both;
+} */
+
 .header-items {
 	max-width: var(--content-width);
 	margin: 0 auto;
@@ -225,7 +225,7 @@ p code {
 	margin-right: 1em;
 	text-decoration: none;
 	padding: 4px 4px;
-	margin: -4px 1em -4px -4px;
+	margin: -4px .8em -4px -4px;
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 4px;
 	transition: 200ms background-color cubic-bezier(0.4, 0, 0.2, 1);
