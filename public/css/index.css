@@ -225,7 +225,7 @@ p code {
 	margin-right: 1em;
 	text-decoration: none;
 	padding: 4px 4px;
-	margin: -4px -4px;
+	margin: -4px 1em -4px -4px;
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 4px;
 	transition: 200ms background-color cubic-bezier(0.4, 0, 0.2, 1);
@@ -264,15 +264,12 @@ p code {
 	gap: 1em;
 	padding: 0;
 	margin: 0;
-	list-style: none;
-	text-align: center;
-	justify-content: flex-end;
 }
 
 .nav a {
 	text-decoration: none;
 	transition: background-size 50ms ease-in-out;
-	background-size: auto 30%;
+	background-size: 100% 30%;
 	background-position: 0 100%;
 	background-repeat: no-repeat;
 	background-image: linear-gradient(rgba(255, 255, 255, 0.5) 0%,
