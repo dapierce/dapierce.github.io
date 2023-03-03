@@ -28,7 +28,7 @@ and GitHub will serve up a live updated version of your site, and give you a lin
 
 Once I had a decent looking site made on Codespaces, I commited my work to my personal repository, and then went to [Netlify](https://www.netlify.com/) for free web hosting. I don't get a ton of traffic, so the free plan works great for my blog. On your Netlify account, you can log in with GitHub and just directly deploy your website's repository. Since I have a domain name, I set that up on the **Domain Management** settings in Netlify, and within a day I had my new website on my address.
 
-If you don't need a fancy domain name, then you can simply host your website using GitHub for free by naming your website repository **\<username\>.github.io**. The website will then become public at **http://\<username\>.github.io** and that can be your new, free home on the internet.
+If you don't need a fancy domain name, then you can simply host your website using GitHub for free by naming your website repository **\<username\>.github.io**. After a bit of effort setting up GitHub Actions, the website will then become public at **http://\<username\>.github.io** and that can be your new, free home on the internet.
 
 ## Alternatives
 
