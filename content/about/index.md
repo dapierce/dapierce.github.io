@@ -16,7 +16,7 @@ That being said, I do have accounts all over the place, covering an assortment o
 
 ## Find me on
 
-* **[mastodon](https://mastodon.social/@dapierce)**
-* **[twitter](https://twitter.com/da_pierce)**
-* **[itch.io](https://dapierce.itch.io)**
-* **[github](https://github.com/dapierce)**
+- **[mastodon](https://mastodon.social/@dapierce)**
+- **[twitter](https://twitter.com/da_pierce)**
+- **[itch.io](https://dapierce.itch.io)**
+- **[github](https://github.com/dapierce)**
