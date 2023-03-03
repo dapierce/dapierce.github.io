@@ -24,7 +24,7 @@ npx @11ty/eleventy --serve
 
 and GitHub will serve up a live updated version of your site, and give you a link to view it as you work. Move that tab over to its own window on the other side of your desktop and you can work and watch the site change.
 
->**Note** that you only get 60 hours of Codespaces time on the free plan, so if you're done designing your site and don't need a live preview anymore, you can use https://github.dev/ to make new posts.
+*Note that you only get 60 hours of Codespaces time on the free plan*, so if you're done designing your site and don't need a live preview anymore, you can use [https://github.dev/](https://github.dev/) to make changes to your codebase and make new posts.
 
 ## GitHub to Netlify
 
@@ -57,9 +57,9 @@ jobs:
 
 ## Alternatives
 
-**[GitLab](https://gitlab.com/)** will work similarly to GitHub, as it can also run VS Code in browser, and they also have a similar coding environment, GitPod that allows live updating just like Codespaces.
+**[GitLab](https://gitlab.com/)** will work similarly to GitHub, as it can also run VS Code in browser, and they also have a similar coding environment, GitPod that allows live updating just like Codespaces. Additionally, GitLab Pages can deploy and host your site with an arguably easier setup than GitHub.
 
-I've also seen **[Glitch](https://glitch.com/)** used not only to code and build things, but also to deploy and host websites. It looks very easy to set up and use, as it has everything built-in.
+I've also seen **[Glitch](https://glitch.com/)** used not only to code and build things with a more accessible interface, but also to deploy and host websites. It looks very easy to set up and use, as it has everything built-in.
 
 ## Final thoughts
 
