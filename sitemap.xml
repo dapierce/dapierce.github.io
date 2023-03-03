@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>https://davidaaronpierce.com/blog/2023-03-01-new-website/</loc>
+		<lastmod>2023-03-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://davidaaronpierce.com/blog/link-rpilocator/</loc>
+		<lastmod>2023-03-01</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://davidaaronpierce.com/about/</loc>
+		<lastmod>2023-03-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://davidaaronpierce.com/blog/</loc>
+		<lastmod>2023-03-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://davidaaronpierce.com/</loc>
+		<lastmod>2023-03-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://davidaaronpierce.com/tags/</loc>
+		<lastmod>2023-03-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://davidaaronpierce.com/tags/notes/</loc>
+		<lastmod>2023-03-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://davidaaronpierce.com/tags/links/</loc>
+		<lastmod>2023-03-03</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://davidaaronpierce.com/tags/web-development/</loc>
+		<lastmod>2023-03-03</lastmod>
+	</url>
+</urlset>

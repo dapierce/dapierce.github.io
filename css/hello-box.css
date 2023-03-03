@@ -1,0 +1,42 @@
+.hello-box {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	justify-items: center;
+	background: var(--gradient-alpha-light);
+	color: var(--color-gray-90);
+	border: 3px solid rgba(255, 255, 255, 0.5);
+	border-radius: 0.5em;
+	box-shadow: 3px 3px 0 var(--color-blue);
+}
+
+.hello-box .message {
+	padding: 1em;
+}
+
+.hello-box picture {
+	align-self: center;
+	padding: 1em;
+}
+
+.hello-box picture img {
+	border-radius: .5em;
+	height: auto;
+	max-width: 280px;
+	width: 100%;
+}
+
+/* @media (prefers-color-scheme: dark) {
+	.hello-box {
+		--color-hello-box: #082840;
+	}
+} */
+
+@media (max-width: 700px) {
+	.hello-box {
+		grid-template-columns: 1fr;
+	}
+
+	.hello-box .message {
+		padding: 1em 1em 0 1em;
+	}
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
+	<title>David🥧</title>
+	<subtitle>Personal website of David Aaron Pierce, artist, occaisonal coder and video game liker.</subtitle>
+	<link href="https://davidaaronpierce.com/feed/feed.xml" rel="self"/>
+	<link href="https://davidaaronpierce.com/"/>
+	<updated>2023-03-01T00:00:00Z</updated>
+	<id>https://davidaaronpierce.com/</id>
+	<author>
+		<name>David Aaron Pierce</name>
+		<email>davidaaronpierce@gmail.com</email>
+	</author>
+	
+	<entry>
+		<title>rpilocator</title>
+		<link href="https://davidaaronpierce.com/blog/link-rpilocator/"/>
+		<updated>2023-03-01T00:00:00Z</updated>
+		<id>https://davidaaronpierce.com/blog/link-rpilocator/</id>
+		<content type="html">&lt;h2 id=&quot;rpilocator&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://rpilocator.com/&quot;&gt;rpilocator&lt;/a&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://davidaaronpierce.com/blog/link-rpilocator/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Updates when new stock of Raspberry Pi&#39;s become available at retailers. No price gouging here, but you do have to keep up--with the ongoing shortages, stock doesn&#39;t stay around for very long.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>A new website, made in the web</title>
+		<link href="https://davidaaronpierce.com/blog/2023-03-01-new-website/"/>
+		<updated>2023-03-01T00:00:00Z</updated>
+		<id>https://davidaaronpierce.com/blog/2023-03-01-new-website/</id>
+		<content type="html">&lt;p&gt;The modern web has mostly become 3-5 websites the past couple decades. They are powerful websites that most who use the internet frequent, and arguably the easiest way for someone to make a name for themselves.&lt;/p&gt;
+&lt;p&gt;But there will always be a place for your own unique presence that cannot be controlled by someone else. A place that you can really make your own. And in 2023, there are enough free tools online that you can entirely build yourself a new website, host it and maintain it completely through a web browser.&lt;/p&gt;
+&lt;p&gt;My website is largely built and maintained &lt;em&gt;within&lt;/em&gt; the browser, and although I keep a copy of the repository on my own hard drive, ultimately most of my time spent on it has been remotely. I&#39;m going to walk through how I do it.&lt;/p&gt;
+&lt;h2 id=&quot;11ty-to-github&quot; tabindex=&quot;-1&quot;&gt;11ty to GitHub &lt;a class=&quot;header-anchor&quot; href=&quot;https://davidaaronpierce.com/blog/2023-03-01-new-website/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I started with a static site generator, &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;11ty&lt;/a&gt;, and used their &lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;starter blog&lt;/a&gt;, which allows you to get up and running with a simple blog website.&lt;/p&gt;
+&lt;p&gt;I made my own repository on GitHub using the starter as a template, and from there I began tinkering with the code and layouts using GitHub&#39;s Codespaces. Basically, it opens VS Code on your browser and you can just start working on the site right there. The terminal is fully functional, and so you can just run&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;npx @11ty/eleventy &lt;span class=&quot;token parameter variable&quot;&gt;--serve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and GitHub will serve up a live updated version of your site, and give you a link to view it as you work. Move that tab over to its own window on the other side of your desktop and you can work and watch the site change.&lt;/p&gt;
+&lt;h2 id=&quot;github-to-netlify&quot; tabindex=&quot;-1&quot;&gt;GitHub to Netlify &lt;a class=&quot;header-anchor&quot; href=&quot;https://davidaaronpierce.com/blog/2023-03-01-new-website/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Once I had a decent looking site made on Codespaces, I commited my work to my personal repository, and then went to &lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify&lt;/a&gt; for free web hosting. I don&#39;t get a ton of traffic, so the free plan works great for my blog. On your Netlify account, you can log in with GitHub and just directly deploy your website&#39;s repository. Since I have a domain name, I set that up on the &lt;strong&gt;Domain Management&lt;/strong&gt; settings in Netlify, and within a day I had my new website on my address.&lt;/p&gt;
+&lt;p&gt;If you don&#39;t need a fancy domain name, then you can simply host your website using GitHub for free by naming your website repository &lt;strong&gt;&amp;lt;username&amp;gt;.github.io&lt;/strong&gt;. After a bit of effort setting up GitHub Actions, the website will then become public at &lt;strong&gt;http://&amp;lt;username&amp;gt;.github.io&lt;/strong&gt; and that can be your new, free home on the internet.&lt;/p&gt;
+&lt;h2 id=&quot;alternatives&quot; tabindex=&quot;-1&quot;&gt;Alternatives &lt;a class=&quot;header-anchor&quot; href=&quot;https://davidaaronpierce.com/blog/2023-03-01-new-website/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;GitLab will work similarly to GitHub, as it can also run VS Code in browser. You won&#39;t have the live render available on GitLab, but if you&#39;re working off a branch you can test your changes for the branch in Netlify before pushing to main.&lt;/p&gt;
+&lt;p&gt;I&#39;ve also seen &lt;a href=&quot;https://glitch.com/&quot;&gt;Glitch&lt;/a&gt; used not only to code, but also deploy personal blogs. It looks very easy to set up and use, as it has everything built-in.&lt;/p&gt;
+&lt;h2 id=&quot;final-thoughts&quot; tabindex=&quot;-1&quot;&gt;Final thoughts &lt;a class=&quot;header-anchor&quot; href=&quot;https://davidaaronpierce.com/blog/2023-03-01-new-website/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Social media as a whole isn&#39;t going anywhere. But individual sites gain and lose prominence, and they are constantly changing their Terms of Service and rules. It&#39;s important to have your own place on the internet with the words, images, videos and other things that you care about, that a massive compnay cannot dictate or remove on the whim of its shareholders.&lt;/p&gt;
+&lt;p&gt;While we are using services to set this website up that are controlled by companies, ultimately what we&#39;re making is a git repository that you can maintain copies of on your own hard drive and in multiple clouds.&lt;/p&gt;
+&lt;p&gt;This is your site, your data, and if you need to take it somewhere else because Netlify or GitHub go away, it&#39;ll be pretty easy to do so.&lt;/p&gt;
+</content>
+	</entry>
+</feed>
