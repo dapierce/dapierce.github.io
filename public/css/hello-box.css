@@ -16,6 +16,7 @@
 .hello-box picture {
 	align-self: center;
 	padding: 1em;
+	min-height: 294px;
 }
 
 .hello-box picture img {
