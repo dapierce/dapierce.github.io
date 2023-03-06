@@ -59,7 +59,7 @@ jobs:
 
 **[GitLab](https://gitlab.com/)** will work similarly to GitHub, as it can also run VS Code in the browser, and they also have GitPod, which allows live updating just like Codespaces. Additionally, GitLab Pages can deploy and host your site with an arguably easier setup than GitHub.
 
-I've also seen **[Glitch](https://glitch.com/)** used not only to code and build things with a more accessible interface, but also to deploy and host websites. It looks very easy to set up and use, as it has everything built-in. [There's even a pre-made 11ty Glitch project that you can get started with in seconds](https://glitch-hello-eleventy.glitch.me/)!
+I've also seen **[Glitch](https://glitch.com/)** used not only to code and build things with a more accessible interface, but also to deploy and host websites. It looks very easy to set up and use, as it has everything built-in. There's even a [pre-made 11ty Glitch project](https://glitch-hello-eleventy.glitch.me/) that you can get started with in seconds.
 
 ## Final thoughts
 
