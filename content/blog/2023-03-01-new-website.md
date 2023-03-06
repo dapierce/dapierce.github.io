@@ -34,7 +34,7 @@ Once I had a decent looking site made on Codespaces, I commited my work to my pe
 
 While Netlify does a great job of just building and deploying a site with no fuss, maybe you don't want another site to log into. Instead, you can host your website using GitHub for free by naming your website repository **\<username\>.github.io** and tinker with [**GitHub Actions**](https://docs.github.com/en/actions). After some effort setting up your workflow, your website will become public at **http://\<username\>.github.io** and that can be your new, free home on the internet.
 
-This is the config I used to build my 11ty site using **11ty-dockerless-build**, and then deploy on GitHub Pages using **actions-gh-pages**. [You can get more info about the deploy step here](https://github.com/peaceiris/actions-gh-pages).
+This is the config I used to build my 11ty site using **11ty-dockerless-build**, and then deploy on GitHub Pages using **actions-gh-pages**. The `github_token` part at the end can be a bit tricky and will require some setup in your Github account and repository settings. [You can get more info about the deploy step here](https://github.com/peaceiris/actions-gh-pages).
 
 ```yml
 name: Eleventy Build
@@ -52,7 +52,7 @@ jobs:
         with:
           publish_dir: _site
           publish_branch: gh-pages
-          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          github_token: (your auth goes here)
 ```
 
 ## Alternatives
