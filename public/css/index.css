@@ -193,6 +193,7 @@ p code {
 	border: 5px solid #e0e0e0;
 	border-radius: 4px;
 	margin: 0 4px;
+	word-break: normal;
 }
 
 /* Header */
