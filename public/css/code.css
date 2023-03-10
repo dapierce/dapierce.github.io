@@ -1,0 +1,4 @@
+/* This CSS file overrides the syntax highlighter CSS */
+code[class*=language-], pre[class*=language-] {
+  font-family: var(--font-family-monospace);
+}
