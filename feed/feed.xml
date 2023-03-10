@@ -4,12 +4,22 @@
 	<subtitle>Personal website of David Aaron Pierce, artist, occaisonal coder and video game liker.</subtitle>
 	<link href="https://davidaaronpierce.com/feed/feed.xml" rel="self"/>
 	<link href="https://davidaaronpierce.com/"/>
-	<updated>2023-03-01T00:00:00Z</updated>
+	<updated>2023-03-10T00:00:00Z</updated>
 	<id>https://davidaaronpierce.com/</id>
 	<author>
 		<name>David Aaron Pierce</name>
 		<email>davidaaronpierce@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>Playing Epic Store Games on a Steam Link</title>
+		<link href="https://davidaaronpierce.com/blog/link-epic-games-on-steam-link/"/>
+		<updated>2023-03-10T00:00:00Z</updated>
+		<id>https://davidaaronpierce.com/blog/link-epic-games-on-steam-link/</id>
+		<content type="html">&lt;h2 id=&quot;playing-epic-store-games-on-a-steam-link&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://seanzwrites.com/posts/how-to-play-epic-games-on-steam-and-steamlink/&quot;&gt;Playing Epic Store Games on a Steam Link&lt;/a&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://davidaaronpierce.com/blog/link-epic-games-on-steam-link/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I have a Raspberry Pi emulator running retro games, but lately I&#39;ve also been running Steam Link on it to play some PC games (FF pixel remasters are really meant for a big screen TV). In this article, Sean goes step by step how to put Epic Game Store games on the Steam Link as well.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>rpilocator</title>
