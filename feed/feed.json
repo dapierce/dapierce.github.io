@@ -14,7 +14,7 @@
 			"id": "https://davidaaronpierce.com/blog/link-epic-games-on-steam-link/",
 			"url": "https://davidaaronpierce.com/blog/link-epic-games-on-steam-link/",
 			"title": "Playing Epic Store Games on a Steam Link",
-			"content_html": "<h2 id=\"playing-epic-store-games-on-a-steam-link\" tabindex=\"-1\"><a href=\"https://seanzwrites.com/posts/how-to-play-epic-games-on-steam-and-steamlink/\">Playing Epic Store Games on a Steam Link</a> <a class=\"header-anchor\" href=\"https://davidaaronpierce.com/blog/link-epic-games-on-steam-link/\">#</a></h2>\n<p>I have a Raspberry Pi emulator running retro games, but lately I've also been running Steam Link on it to play some PC games (FF pixel remasters are really meant for a big screen TV). In this article, Sean goes step by step how to put Epic Game Store games on the Steam Link as well.</p>\n",
+			"content_html": "<p>I have a Raspberry Pi emulator running retro games, but lately I've also been running Steam Link on it to play some PC games (FF pixel remasters are really meant for a big screen TV). <a href=\"https://seanzwrites.com/posts/how-to-play-epic-games-on-steam-and-steamlink/\">In this article</a>, Sean Z goes step by step how to put Epic Game Store games on the Steam Link as well.</p>\n",
 			"date_published": "2023-03-10T00:00:00Z"
 		}
 		,
@@ -22,7 +22,7 @@
 			"id": "https://davidaaronpierce.com/blog/link-rpilocator/",
 			"url": "https://davidaaronpierce.com/blog/link-rpilocator/",
 			"title": "rpilocator",
-			"content_html": "<h2 id=\"rpilocator\" tabindex=\"-1\"><a href=\"https://rpilocator.com/\">rpilocator</a> <a class=\"header-anchor\" href=\"https://davidaaronpierce.com/blog/link-rpilocator/\">#</a></h2>\n<p>Updates when new stock of Raspberry Pi's become available at retailers. No price gouging here, but you do have to keep up--with the ongoing shortages, stock doesn't stay around for very long.</p>\n",
+			"content_html": "<p>Updates when new stock of Raspberry Pi's become available at retailers. No price gouging here, but you do have to keep up--with the ongoing shortages, stock doesn't stay around for very long.</p>\n",
 			"date_published": "2023-03-01T00:00:00Z"
 		}
 		,

@@ -1,0 +1,61 @@
+/* Posts list */
+.notelist {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+
+.notelist-item {
+  align-items: baseline;
+	list-style-type: none;
+	margin: 0;
+	padding: .5em;
+  margin-bottom: 1em;
+  background-image: linear-gradient(#efefef 0.1em,#f9f9ef 0.1em);
+  background-size: 100% 1.6em;
+  border: 1px solid var(--color-blue);
+  /* border-radius: 0.5em; */
+	width: 100%;
+	box-shadow: 3px 3px 0 var(--color-blue);
+}
+
+.notelist-date,
+.notelist-item:before {
+	font-size: 0.9em;
+	font-weight: 700;
+	font-style: italic;
+	/* 13px /16 */
+	color: var(--color-gray-90);
+}
+
+.notelist-date {
+	word-spacing: -0.5px;
+	padding-bottom: 4px;
+	margin-left: -1.5rem;
+	margin-bottom: 1em;
+	background-size: auto 50%;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-image: var(--gradient-alpha-light);
+}
+
+.notelist-link {
+	font-size: 1.1875em;
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+
+.notelist-item-active .notelist-link {
+	font-weight: bold;
+}
+
+.notelist-item p {
+  margin-top: 0;
+}
