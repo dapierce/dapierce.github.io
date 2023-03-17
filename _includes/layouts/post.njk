@@ -14,7 +14,7 @@ layout: layouts/base.njk
 	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
 </ul>
-{% if featuredLink %}<ul><li><a href="{{ featuredLink }}">{{ featuredLink }}</a></li></ul>{% endif %}
+{% if featuredLink %}<ul class="post-featured-link"><li>Link: <a href="{{ featuredLink }}">{{ featuredLink }}</a></li></ul>{% endif %}
 
 {{ content | safe }}
 
