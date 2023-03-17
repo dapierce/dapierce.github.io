@@ -1,6 +1,6 @@
 .hello-box {
 	display: grid;
-	grid-template-columns: 1.5fr 1fr;
+	grid-template-columns: 1fr .7fr;
 	justify-items: center;
 	background: var(--gradient-alpha-light);
 	color: var(--color-gray-90);
@@ -14,9 +14,8 @@
 }
 
 .hello-box picture {
-	align-self: center;
 	padding: 1em;
-	min-height: 294px;
+	min-height: 272px;
 }
 
 .hello-box picture img {
