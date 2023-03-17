@@ -42,17 +42,17 @@
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/tags/web-development/</loc>
-		<lastmod>2023-03-17</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://davidaaronpierce.com/tags/notes/</loc>
 		<lastmod>2023-03-17</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://davidaaronpierce.com/tags/links/</loc>
+		<lastmod>2023-03-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://davidaaronpierce.com/tags/web-development/</loc>
 		<lastmod>2023-03-17</lastmod>
 	</url>
 </urlset>
