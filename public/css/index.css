@@ -89,8 +89,8 @@ html {
 }
 
 body {
-	display:flex;
-	flex-direction:column;
+	display: flex;
+	flex-direction: column;
 	min-height: 100vh;
 }
 
@@ -155,7 +155,8 @@ main :first-child {
 	margin-top: 0;
 }
 
-main a:hover, a:active {
+main a:hover,
+a:active {
 	background-size: 100% 50%;
 	background-position: 0 100%;
 	background-repeat: no-repeat;
@@ -212,7 +213,8 @@ p code {
 }
 
 /* Header */
-header, footer {
+header,
+footer {
 	background: var(--gradient-alpha-dark);
 	padding: 1rem 0;
 	width: 100%;
@@ -337,6 +339,7 @@ footer a:focus {
 	padding: 4px 4px;
 	margin: -4px -4px;
 }
+
 /* Footer */
 footer {
 	margin: 0 auto;
@@ -355,6 +358,10 @@ footer p {
 	list-style: none;
 	padding: 0;
 	padding-left: 1.5rem;
+}
+
+.postlist li {
+	margin-bottom: .6em;
 }
 
 .postlist-item {
@@ -452,15 +459,17 @@ h2+.header-anchor {
 
 @media (max-width: 420px) {
 
-	.header-items, {
+	.header-items {
 		padding: 0 1.2rem;
 	}
-	
+
 	main {
 		padding: 1rem 1.2rem;
 	}
-	footer, .header-items {
+
+	footer,
+	.header-items {
 		font-size: .9em;
 	}
-	
+
 }

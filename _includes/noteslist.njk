@@ -4,7 +4,7 @@
 	{% if post.date | htmlDateString != previousDate %}<time class="notelist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("M/dd/yyyy") }}</time>{% endif %}
 	{% set previousDate = post.date | htmlDateString %}
 	<li class="notelist-item{% if post.url == url %} notelist-item-active{% endif %}">
-		{% if post.data.featuredLink %}<a href="{{ post.data.featuredLink }}" class="notelist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>{% endif %}
+		<p>{% if post.data.featuredLink %}<a href="{{ post.data.featuredLink }}" class="notelist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>{% endif %}</p>
 		{{ post.content | safe }}
 	</li>
 {% endfor %}
