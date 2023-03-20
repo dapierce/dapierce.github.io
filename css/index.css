@@ -99,6 +99,7 @@ main {
 	max-width: var(--content-width);
 	margin: 0 auto;
 	padding: 1rem 2.2rem;
+	width: 100%;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
