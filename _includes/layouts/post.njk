@@ -14,6 +14,7 @@ layout: layouts/base.njk
 	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
 </ul>
+{# Add the featured link to the top if its in the head space #}
 {% if featuredLink %}<ul class="post-featured-link"><li>Link: <a href="{{ featuredLink }}">{{ featuredLink }}</a></li></ul>{% endif %}
 
 {{ content | safe }}
