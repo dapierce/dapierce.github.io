@@ -1,0 +1,24 @@
+/* Gallery list */
+
+.gallerylist a[href] {
+  color: lightgray;
+}
+
+.gallerylist {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 0;
+}
+
+.gallerylist li {
+  list-style-type: none;
+  line-height: 0;
+}
+
+.gallerylist img {
+  aspect-ratio: 1/1; 
+  object-fit: cover;
+  width: 100%;
+  max-height: 200px;
+}
