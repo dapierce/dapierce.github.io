@@ -15,8 +15,12 @@ pagination:
 {% for item in gallery %}
   <li>
     <span class="cssbox">
-      <a id="image{{number}}" href="#image{{number}}"><span class="cssbox_thumb">{% image "../public" + item.url, item.alt, [500, auto], [500, auto] %}</span>
-        <span class="cssbox_full">{% image "../public" + item.url, item.alt, [500, auto], [500, auto] %}</span>
+      <a id="image{{number}}" href="#image{{number}}">
+        <span class="cssbox_thumb">{% image "../public" + item.url, item.alt, [500, auto], [500, auto] %}</span>
+        <span class="cssbox_full">
+          {% image "../public" + item.url, item.alt, [500, auto], [500, auto] %}
+          <div class="full-caption"><p>{{item.title}} - {{item.date}}</p></div>
+        </span>
       </a>
       <a class="cssbox_close" href="#void"></a>
       {% if number > 1 %}
@@ -26,6 +30,7 @@ pagination:
       <a class="cssbox_next" href="#image{{number + 1}}">&gt;</a>
       {% endif %}
     </span>
+    <p class="front-caption">{{item.title}} <br> {{item.date}}</p>
   </li>
   {% set number = number + 1 %}
 {% endfor %}

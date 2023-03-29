@@ -22,16 +22,34 @@
   height: auto;
   width: 100%;
 }
+.front-caption {
+  display: none;
+  text-align: center;
+}
 
-@media (max-width: 600px) {
+.full-caption {
+  display: inline-table;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 1em;
+  color: white;
+  text-shadow: 0 0 8px black;
+}
+
+@media (max-width: 520px) {
+  main {
+    padding: 0 !important;
+  }
   .gallerylist {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1em;
   }
-}
-
-@media (max-width: 500px) {
-  main {
-    padding: 0 !important;
+  .gallerylist {
+    gap: 1em;
+  }
+  .front-caption {
+    display: block;
   }
 }

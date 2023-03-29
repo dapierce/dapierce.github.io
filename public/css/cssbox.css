@@ -43,6 +43,7 @@ position: fixed;
 text-decoration: none;
 visibility: hidden;
 font-size: 48px;
+text-shadow: 0 0 8px black;
 }
 
 a.cssbox_close:hover,
@@ -92,3 +93,11 @@ opacity: 1;
 pointer-events: initial;
 }
 /* This is the end of CSSBox */
+
+@media (max-width: 520px) {
+
+span.cssbox_full img {
+  max-height: 100%;
+  max-width: 100%;
+  }
+}
