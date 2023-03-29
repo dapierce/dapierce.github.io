@@ -86,7 +86,7 @@ a:target ~ a.cssbox_next {
 visibility: visible;
 }
 
-a:target > img.cssbox_thumb + span.cssbox_full {
+a:target > span.cssbox_thumb + span.cssbox_full {
 visibility: visible;
 opacity: 1;
 pointer-events: initial;
