@@ -1,14 +1,26 @@
 [
     {
-        "title": "Weightless city",
+        "title": "15 minute figure drawing",
         "date": "Feb 2023",
-        "url": "/img/gallery/2023-weightless-city.jpg",
+        "url": "/img/gallery/2023-02-08-figure-drawing.jpg",
+        "alt": "Pencil drawing of a person reclining, head turned away."
+    },
+    {
+        "title": "Weightless city",
+        "date": "Dec 2022",
+        "url": "/img/gallery/2022-12-29-weightless-city.jpg",
         "alt": "Sun sets behind clouds in a bay surrounded by a city on hills. Fadded clouds hide part of the hill, making a floating city above."
+    },
+    {
+        "title": "Overpass",
+        "date": "Oct 2022",
+        "url": "/img/gallery/2022-10-08-overpass.jpg",
+        "alt": "Ink drawing of a dilapidated overpass over water."
     },
     {
         "title": "Myself, age 38",
         "date": "June 2022",
-        "url": "/img/gallery/2022-myself-age-38.jpg",
+        "url": "/img/gallery/2022-06-20-myself-age-38.jpg",
         "alt": "Portrait of a man, wearing glasses and a beard, with a pink shirt in front of a blue background."
     }
 ]
