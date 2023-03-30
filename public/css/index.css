@@ -64,7 +64,7 @@
 	--theme-dark-text: #ffffff;
 
 	/* design */
-	--content-width: 42em;
+	--content-width: 45em;
 	--frame-padding: 0 2em;
 
 	/* typography */
@@ -170,16 +170,16 @@ li {
 	line-height: 1.6;
 }
 
-a[href] {
+a {
 	color: var(--text-color-link);
 }
 
-a[href]:visited {
+a:visited {
 	color: var(--text-color-link-visited);
 }
 
-a[href]:hover,
-a[href]:active {
+a:hover,
+a:active {
 	color: var(--text-color-link-active);
 }
 
@@ -197,7 +197,7 @@ main :first-child {
 
 main a:hover,
 main a:active {
-	background-size: 100% 50%;
+	background-size: 100% 60%;
 	background-position: 0 100%;
 	background-repeat: no-repeat;
 	background-image: var(--gradient-alpha-light);
@@ -247,8 +247,7 @@ code {
 p code {
 	background-color: #e0e0e0;
 	border-radius: 4px;
-	margin: 0 4px;
-	padding: 5px;
+	padding: 4px;
 	word-break: normal;
 }
 

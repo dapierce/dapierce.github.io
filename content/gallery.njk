@@ -1,0 +1,37 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Gallery
+  order: 3
+pagination:
+  data: gallery
+  size: 9
+---
+{%- css %}{% include "public/css/gallery.css" %}{%- endcss %}
+{%- css %}{% include "public/css/cssbox.css" %}{%- endcss %}
+
+{% set number = 1 %}
+<ol class="gallerylist">
+{% for item in gallery %}
+  <li>
+    <span class="cssbox">
+      <a id="image{{number}}" href="#image{{number}}">
+        <span class="cssbox_thumb">{% image "../public" + item.url, item.alt, [500, auto], [500, auto] %}</span>
+        <span class="cssbox_full">
+          {% image "../public" + item.url, item.alt, [500, auto], [500, auto] %}
+          <div class="full-caption"><p>{{item.title}} - {{item.date}}</p></div>
+        </span>
+      </a>
+      <a class="cssbox_close" href="#void"></a>
+      {% if number > 1 %}
+      <a class="cssbox_prev" href="#image{{number - 1}}">&lt;</a>
+      {% endif %}
+		  {% if number < gallery.length %}
+      <a class="cssbox_next" href="#image{{number + 1}}">&gt;</a>
+      {% endif %}
+    </span>
+    <p class="front-caption">{{item.title}} <br> {{item.date}}</p>
+  </li>
+  {% set number = number + 1 %}
+{% endfor %}
+</ol>

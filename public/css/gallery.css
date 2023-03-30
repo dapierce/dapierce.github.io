@@ -1,0 +1,55 @@
+/* Gallery list */
+
+.gallerylist a[href] {
+  color: lightgray;
+}
+
+.gallerylist {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 0;
+}
+
+.gallerylist li {
+  list-style-type: none;
+  line-height: 0;
+}
+
+.gallerylist img {
+  aspect-ratio: 1/1; 
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+.front-caption {
+  display: none;
+  text-align: center;
+}
+
+.full-caption {
+  display: inline-table;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 1em;
+  color: white;
+  text-shadow: 0 0 8px black;
+}
+
+@media (max-width: 520px) {
+  main {
+    padding: 0 !important;
+  }
+  .gallerylist {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1em;
+  }
+  .gallerylist {
+    gap: 1em;
+  }
+  .front-caption {
+    display: block;
+  }
+}
