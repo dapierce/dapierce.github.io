@@ -16,9 +16,9 @@ pagination:
   <li>
     <span class="cssbox">
       <a id="image{{number}}" href="#image{{number}}">
-        <span class="cssbox_thumb">{% image "../public" + item.url, item.alt, [500, auto], [500, auto] %}</span>
+        <span class="cssbox_thumb">{% image "../public" + item.url, item.alt, [250, 500], [250, 500] %}</span>
         <span class="cssbox_full">
-          {% image "../public" + item.url, item.alt, [500, auto], [500, auto] %}
+          {% image "../public" + item.url, item.alt, [500, 1000, auto], [500, 1000, auto] %}
           <div class="full-caption"><p>{{item.title}} - {{item.date}}</p></div>
         </span>
       </a>
