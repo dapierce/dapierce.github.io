@@ -4,6 +4,8 @@
 
 My personal website, built from [eleventy-base-blog v8](https://github.com/11ty/eleventy-base-blog).
 
+Incorporates [CSSBox](https://github.com/TheLastProject/CSSBox) for the Gallery page.
+
 ## Getting Started
 
 1. Clone this Repository
