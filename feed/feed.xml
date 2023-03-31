@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
 	<title>David🥧</title>
-	<subtitle>Personal website of David Aaron Pierce, artist, occaisonal coder and video game liker.</subtitle>
+	<subtitle>Personal website of David Aaron Pierce, artist, occasional coder and video game liker.</subtitle>
 	<link href="https://davidaaronpierce.com/feed/feed.xml" rel="self"/>
 	<link href="https://davidaaronpierce.com/"/>
 	<updated>2023-03-21T00:00:00Z</updated>
