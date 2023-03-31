@@ -3,7 +3,7 @@ module.exports = {
 	url: "https://davidaaronpierce.com/",
 	language: "en",
 	description:
-		"Personal website of David Aaron Pierce, artist, occaisonal coder and video game liker.",
+		"Personal website of David Aaron Pierce, artist, occasional coder and video game liker.",
 	author: {
 		name: "David Aaron Pierce",
 		email: "davidaaronpierce@gmail.com",
