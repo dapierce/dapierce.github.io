@@ -11,6 +11,14 @@
 	},
 	"items": [
 		{
+			"id": "https://davidaaronpierce.com/blog/link-faviconio/",
+			"url": "https://davidaaronpierce.com/blog/link-faviconio/",
+			"title": "favicon.io",
+			"content_html": "<p>Makes giving your website a favicon, the picture that appears in tabs and on Bookmarks, as easy as picking some options and clicking Download. What a great resource!</p>\n",
+			"date_published": "2023-04-18T00:00:00Z"
+		}
+		,
+		{
 			"id": "https://davidaaronpierce.com/blog/link-google-webfonts-helper/",
 			"url": "https://davidaaronpierce.com/blog/link-google-webfonts-helper/",
 			"title": "google-webfonts-helper",

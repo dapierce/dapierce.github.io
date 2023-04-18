@@ -4,12 +4,21 @@
 	<subtitle>Personal website of David Aaron Pierce, artist, occasional coder and video game liker.</subtitle>
 	<link href="https://davidaaronpierce.com/feed/feed.xml" rel="self"/>
 	<link href="https://davidaaronpierce.com/"/>
-	<updated>2023-03-21T00:00:00Z</updated>
+	<updated>2023-04-18T00:00:00Z</updated>
 	<id>https://davidaaronpierce.com/</id>
 	<author>
 		<name>David Aaron Pierce</name>
 		<email>davidaaronpierce@gmail.com</email>
 	</author>
+	
+	<entry>
+		<title>favicon.io</title>
+		<link href="https://davidaaronpierce.com/blog/link-faviconio/"/>
+		<updated>2023-04-18T00:00:00Z</updated>
+		<id>https://davidaaronpierce.com/blog/link-faviconio/</id>
+		<content type="html">&lt;p&gt;Makes giving your website a favicon, the picture that appears in tabs and on Bookmarks, as easy as picking some options and clicking Download. What a great resource!&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>google-webfonts-helper</title>
