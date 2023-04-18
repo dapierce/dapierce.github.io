@@ -9,11 +9,11 @@ numberOfLatestPostsToShow: 3
 {%- css %}{% include "public/css/hello-box.css" %}{% endcss %}
 <div class="hello-box">
 	<div class="message">
-		<h1>Hello!</h1>
-		<p>I'm <strong>David Aaron Pierce</strong>, an artist, occasional coder, and video games liker.</p>
+		<p><strong>Hello!</strong><br>
+		I'm <strong>David Aaron Pierce</strong>, an artist, occasional coder, and video games liker.</p>
 		<p>I write things here, and maybe sometimes post my artwork and various experiments.</p>
 	</div>
-	{% image "../public/img/portrait.jpg", "Photo of my face, I'm pleased to meet you!", [300, auto], [300, auto] %}
+	{# {% image "../public/img/portrait.jpg", "Photo of my face, I'm pleased to meet you!", [300, auto], [300, auto] %} #}
 </div>
 
 {% set postsCount = collections.posts | length %}

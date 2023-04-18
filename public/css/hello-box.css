@@ -1,4 +1,11 @@
 .hello-box {
+	font-size: 1.6em;
+	font-style: italic;
+	color:#888;
+	margin-bottom: 2em;
+}
+
+/* .hello-box {
 	display: grid;
 	grid-template-columns: 1fr .7fr;
 	justify-items: center;
@@ -37,9 +44,10 @@
 @media (max-width: 700px) {
 	.hello-box {
 		grid-template-columns: 1fr;
+		margin-bottom: 0;
 	}
 
-	.hello-box .message {
+	/* .hello-box .message {
 		padding: 1em 1em 0 1em;
-	}
-}
+	} */
+} */
