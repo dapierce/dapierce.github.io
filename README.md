@@ -6,12 +6,20 @@ My personal website, built from [eleventy-base-blog v8](https://github.com/11ty/
 
 Incorporates [CSSBox](https://github.com/TheLastProject/CSSBox) for the Gallery page.
 
+## Todo
+
+- [ ] Integrate music/spotify api for currently listening
+- [ ] Redesign Home to be more minimal/typographic
+	- [ ] add color with paint covering background
+	- [ ] Add sections for blog, gallery, notes
+- [ ] Make notes section browsable by tags
+
 ## Getting Started
 
 1. Clone this Repository
 
 ```
-git clone https://github.com/dapierce/davidpie.git
+git clone https://github.com/dapierce/dapierce.github.io.git
 ```
 
 2. Navigate to the directory and install packages
