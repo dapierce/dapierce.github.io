@@ -82,6 +82,13 @@ module.exports = function(eleventyConfig) {
 		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 	});
 
+	// Use "<!-- excerpt -->" in blog posts to make page.excerpt data for Home
+	eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    // Optional, default is "---"
+    excerpt_separator: "<!-- excerpt -->"
+  });
+
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAnchor, {
