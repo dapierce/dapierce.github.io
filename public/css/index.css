@@ -403,6 +403,10 @@ footer p {
 	margin-bottom: .6em;
 }
 
+.postlist p {
+	margin-left: 2em;
+}
+
 .postlist-item {
 	display: flex;
 	flex-wrap: wrap;

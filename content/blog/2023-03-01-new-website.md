@@ -6,9 +6,12 @@ tags:
   - web development
 ---
 
-The modern web has mostly become 3-5 websites the past couple decades. They are powerful websites that most who use the internet frequent, and arguably the easiest way for someone to make a name for themselves.
+It's 2023 and you need your own website. Today, there are enough free tools online that you can entirely build yourself a new website, host it and maintain it completely through a web browser.
+---
 
-But there will always be a place for your own unique presence that cannot be controlled by someone else. A place that you can really make your own. And in 2023, there are enough free tools online that you can entirely build yourself a new website, host it and maintain it completely through a web browser.
+The modern web has mostly become four websites the past couple decades. They are powerful websites most everyone frequents, and arguably the easiest way for someone to make a name for themselves. But they are also controlled by megalomaniacs who value unlimited growth above your content and space.
+
+But there will always be a place for your own unique presence that cannot be controlled by someone else. A place that you can really make your own.
 
 My website is largely built and maintained *within* the browser, and although I keep a copy of the repository on my own hard drive, ultimately most of my time spent on it has been remotely. I'm going to walk through how I do it.
 
