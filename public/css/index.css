@@ -335,6 +335,7 @@ footer a {
 	background-repeat: no-repeat;
 	background-image: linear-gradient(var(--color-blue) 0%,
 			var(--color-blue) 100%);
+	white-space: nowrap;
 }
 
 .nav a:hover,
