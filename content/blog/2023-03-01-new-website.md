@@ -66,7 +66,7 @@ I've also seen **[Glitch](https://glitch.com/)** used not only to code and build
 
 ## Final thoughts
 
-Social media as a whole isn't going anywhere. But individual sites gain and lose prominence, and they are constantly changing their Terms of Service and rules. It's important to have your own place on the internet with the words, images, videos and other things that you care about, that a massive compnay cannot dictate or remove on the whim of its shareholders.
+Social media as a whole isn't going anywhere. But the big sites are constantly changing their Terms of Service and rules, they shift their values, and sell advertising with your content. I think it's important to have your own place on the internet with the words, images, videos and other things that you care about, that a massive company cannot dictate or remove on the whim of its shareholders.
 
 While we are using services to set this website up that are controlled by companies, ultimately what we're making is a git repository that you can maintain copies of on your own hard drive and in multiple clouds.
 
