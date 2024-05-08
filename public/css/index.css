@@ -500,6 +500,19 @@ h2+.header-anchor {
 	font-size: 1.5em;
 }
 
+/* Make navigation easier on phone screens */
+@media (max-width: 540px) {
+
+	nav {
+		width: 100%;
+	}
+	
+	.nav {
+		justify-content: space-between;
+	}
+}
+
+/* Reduce font-sizes for smaller phone screens */
 @media (max-width: 420px) {
 
 	.header-items {
