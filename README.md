@@ -8,7 +8,7 @@ Incorporates [CSSBox](https://github.com/TheLastProject/CSSBox) for the Gallery 
 
 ## Todo
 
-- [ ] Change Home to have blog post exerpts + notes
+- [x] Change Home to have blog post exerpts + notes
 - [ ] Integrate music/spotify api for currently listening
 - [x] Redesign Home to be more minimal/typographic
 	- [x] add color with paint covering background

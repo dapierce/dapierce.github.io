@@ -3,7 +3,7 @@ layout: layouts/home.njk
 //eleventyNavigation:
 //  key: Home
 //  order: 1
-numberOfLatestPostsToShow: 3
+numberOfLatestPostsToShow: 5
 ---
 
 {%- css %}{% include "public/css/hello-box.css" %}{% endcss %}
@@ -13,8 +13,23 @@ numberOfLatestPostsToShow: 3
 		I'm <strong>David Aaron Pierce</strong>, an artist, occasional coder, and video games liker.</p>
 		<p>I write things here, and maybe sometimes post my artwork and various experiments.</p>
 	</div>
-	{# {% image "../public/img/portrait.jpg", "Photo of my face, I'm pleased to meet you!", [300, auto], [300, auto] %} #}
 </div>
+
+{# Latest long-form entry goes on top #}
+{%- css %}{% include "public/css/featured-box.css" %}{% endcss %}
+{% set featuredPost = 1 %}
+{% for post in collections.longform | reverse %}
+{% if featuredPost != 0 %}
+<a href="{{ post.url }}" class="featured-link">
+<div class="featured-box">
+<h2>{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h2>
+<span class="feature-date">{{ post.data.page.date | htmlDateString }}</span>
+<p>{{ post.data.page.excerpt }}</p>
+</div>
+</a>
+{% set featuredPost = featuredPost -1 %}
+{% endif %}
+{% endfor %}
 
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}

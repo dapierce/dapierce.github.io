@@ -2,7 +2,6 @@
 {% for post in postslist | reverse %}
 		<li>
 			{% if page.url == post.url %} aria-current="page"{% endif %}{{ post.data.page.date | htmlDateString }} — <a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-			<p>{{ post.data.page.excerpt }}</p>
 		</li>
 {% endfor %}
 </ol>

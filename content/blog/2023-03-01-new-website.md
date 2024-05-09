@@ -3,6 +3,7 @@ title: A new website, made in the web
 description: How I built my new website
 date: 2023-03-01
 tags:
+  - longform
   - web development
 ---
 

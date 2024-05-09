@@ -1,8 +1,8 @@
 .hello-box {
 	font-size: 1.6em;
 	font-style: italic;
-	color:#555;
-	margin-bottom: 2em;
+	color: var(--color-gray-70);
+	margin-bottom: 2rem;
 }
 
 /* .hello-box {
