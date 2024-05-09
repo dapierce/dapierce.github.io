@@ -29,7 +29,7 @@
 .feature-date {
 	position: absolute;
 	left: -.4em;
-	top: -.2em;
+	top: -.37em;
   opacity: .1;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-style: italic;
@@ -43,11 +43,6 @@
 	}
 
 	.feature-date {
-		left: -.4em;
-		top: -.2em;
-		opacity: .1;
-		font-family: Georgia, 'Times New Roman', Times, serif;
-		font-style: italic;
 		font-size: 4em;
 	}
 }
