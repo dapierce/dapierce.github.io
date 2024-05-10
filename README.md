@@ -8,6 +8,7 @@ Incorporates [CSSBox](https://github.com/TheLastProject/CSSBox) for the Gallery 
 
 ## Todo
 
+- [ ] Make 'notes' and 'links' tag icons for home/archives post listings.
 - [x] Change Home to have blog post exerpts + notes
 - [ ] Integrate music/spotify api for currently listening
 - [x] Redesign Home to be more minimal/typographic
