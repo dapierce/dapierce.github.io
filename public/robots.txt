@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /blog/
+Disallow: /feed/
+Disallow: /gallery/
+Disallow: /img/
+Disallow: /notes/
+Disallow: /tags/
