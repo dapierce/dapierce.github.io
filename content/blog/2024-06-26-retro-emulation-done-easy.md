@@ -7,6 +7,8 @@ tags:
   - video games
   - retro
   - emulation
+featuredImage: "../../public/img/retro-emu-castlevania.png"
+featuredImageAlt: "A screenshot of Castlevania: Bloodlines with scanline filter"
 ---
 
 After a year enjoying the comfort of playing old games on my TV, I can fully recommend my retro gaming setup: a mini PC running Batocera Linux.
@@ -34,3 +36,5 @@ Stick Batocera on one of these modest 6+ year old machines with laptop component
 It's not a MiSTer, but perfect hardware recreation is not something I can personally discern from modern emulators running on powerful enough computers. If you notice the difference in sound or timing, that's actually pretty amazing--but for me, an $80 computer and a few different controllers depending on the system get me all the way there.
 
 Last thing: save states are a big deal to me and one of my favorite features of this setup is **"Auto Save/Load"**. Turn it on, and you can start and leave your games at any time, and just resume from where you left off without worrying about in-game saves or manually saving and loading states. In my busier days it feels good to get in a few minutes of a game, and then be able to get back to it later, no fuss.
+
+{% image "../../public//img/retro-emu-ys3.png", "A screenshot from Ys 3 with the text 'To be continued'" %}

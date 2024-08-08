@@ -253,6 +253,11 @@ p code {
 	word-break: normal;
 }
 
+p img {
+	width: 100%;
+	height: 100%;
+}
+
 /* Header */
 header,
 footer {

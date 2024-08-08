@@ -7,6 +7,9 @@ layout: layouts/base.njk
 {%- css %}{% include "public/css/code.css" %}{%- endcss %}
 <h1>{{ title }}</h1>
 
+{# Add the featured image to the top if its in the head space #}
+{% if featuredImage %}<p>{% image featuredImage, featuredImageAlt %}</p>{% endif %}
+
 <ul class="post-metadata">
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
 	{%- for tag in tags | filterTagList %}
