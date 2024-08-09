@@ -7,8 +7,8 @@ tags:
   - video games
   - retro
   - emulation
-featuredImage: "../../public/img/retro-emu-castlevania.png"
-featuredImageAlt: "A screenshot of Castlevania: Bloodlines with scanline filter"
+featuredImage: "images/2024-06-26-retro-emu-shadow.png"
+featuredImageAlt: "A screenshot of Shadow of the Colossus (PS2)"
 ---
 
 After a year enjoying the comfort of playing old games on my TV, I can fully recommend my retro gaming setup: a mini PC running Batocera Linux.
@@ -27,6 +27,8 @@ You don't even really have to mess with Retroarch's infamous UI to do things lik
 
 So now that I'm done gushing about Batocera, I found one more way to take the experience further: using a higher powered PC to play on. The old Pi 3 is good at the older stuff, but for some arcade games, Dreamcast games, PS2 and Gamecube, I needed more power.
 
+{% image "images/2024-06-26-retro-emu-shenmue.png", "A screenshot from Shenmue (Dreamcast) with scanline filter" %}
+
 But not *that* much power.
 
 That's where online auctions come in. It turns out there are thousands of old, under-utilized mini PCs that will fit neatly next to your other consoles and television, and cost under $100 that are pleanty powerful enough to run your favorite 3D retro games.
@@ -37,4 +39,4 @@ It's not a MiSTer, but perfect hardware recreation is not something I can person
 
 Last thing: save states are a big deal to me and one of my favorite features of this setup is **"Auto Save/Load"**. Turn it on, and you can start and leave your games at any time, and just resume from where you left off without worrying about in-game saves or manually saving and loading states. In my busier days it feels good to get in a few minutes of a game, and then be able to get back to it later, no fuss.
 
-{% image "../../public//img/retro-emu-ys3.png", "A screenshot from Ys 3 with the text 'To be continued'" %}
+{% image "images/2024-06-26-retro-emu-ys3.png", "A screenshot from Ys 3 with the text 'To be continued'" %}
