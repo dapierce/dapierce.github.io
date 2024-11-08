@@ -16,7 +16,7 @@ That being said, I do have accounts all over the place, covering an assortment o
 
 ## Find me on
 
+- **<a rel="me" href="https://bsky.app/profile/dapierce.bsky.social">bluesky</a>**
 - **<a rel="me" href="https://mastodon.social/@dapierce">mastodon</a>**
-- **[twitter](https://twitter.com/da_pierce)**
 - **[itch.io](https://dapierce.itch.io)**
 - **[github](https://github.com/dapierce)**
