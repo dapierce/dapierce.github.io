@@ -8,7 +8,7 @@ tags:
   - retro
   - emulation
 featuredImage: "images/2024-06-26-retro-emu-shadow.png"
-featuredImageAlt: "A screenshot of Shadow of the Colossus (PS2)"
+featuredImageAlt: "A screenshot of Shadow of the Colossus (PS2): the hero rides a horse through a grassy field with ruins in the distance."
 ---
 
 After a year enjoying the comfort of playing old games on my TV, I can fully recommend my retro gaming setup: a mini PC running Batocera Linux.
