@@ -65,7 +65,7 @@ export default async function(eleventyConfig) {
 		metadata: {
 			language: "en",
 			title: "David🥧",
-			subtitle: "This is a longer description about your blog.",
+			subtitle: "Personal website of David Aaron Pierce, artist, occasional coder and video game liker.",
 			base: "https://davidaaronpierce.com/",
 			author: {
 				name: "David Aaron Pierce"
