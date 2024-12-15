@@ -2,72 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://davidaaronpierce.com/blog/2023-03-01-new-website/</loc>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/blog/2023-03-01-new-website/</loc>
 		<lastmod>2023-03-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/blog/link-rpilocator/</loc>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/blog/link-rpilocator/</loc>
 		<lastmod>2023-03-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/blog/link-epic-games-on-steam-link/</loc>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/blog/link-epic-games-on-steam-link/</loc>
 		<lastmod>2023-03-10</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/blog/link-google-webfonts-helper/</loc>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/blog/link-google-webfonts-helper/</loc>
 		<lastmod>2023-03-21</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/blog/link-faviconio/</loc>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/blog/link-faviconio/</loc>
 		<lastmod>2023-04-18</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/about/</loc>
-		<lastmod>2024-01-26</lastmod>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/blog/2024-05-10-rollback-to-the-old/</loc>
+		<lastmod>2024-05-10</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/blog/</loc>
-		<lastmod>2024-01-26</lastmod>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/</loc>
+		<lastmod>2024-06-26</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/gallery/</loc>
-		<lastmod>2024-01-26</lastmod>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/</loc>
+		<lastmod>2024-12-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/</loc>
-		<lastmod>2024-01-26</lastmod>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/about/</loc>
+		<lastmod>2024-12-15</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/notes/</loc>
-		<lastmod>2024-01-26</lastmod>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/blog/</loc>
+		<lastmod>2024-12-15</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/tags/</loc>
-		<lastmod>2024-01-26</lastmod>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/gallery/</loc>
+		<lastmod>2024-12-15</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/tags/web-development/</loc>
-		<lastmod>2024-01-26</lastmod>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/</loc>
+		<lastmod>2024-12-15</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/tags/notes/</loc>
-		<lastmod>2024-01-26</lastmod>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/notes/</loc>
+		<lastmod>2024-12-15</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://davidaaronpierce.com/tags/links/</loc>
-		<lastmod>2024-01-26</lastmod>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/tags/</loc>
+		<lastmod>2024-12-15</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://davidaaronpierce.com/eleventy-base-blog/feed/feed.xml</loc>
+		<lastmod>2024-12-15</lastmod>
 	</url>
 </urlset>

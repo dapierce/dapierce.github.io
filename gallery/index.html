@@ -5,47 +5,772 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>David🥧</title>
 		<meta name="description" content="Personal website of David Aaron Pierce, artist, occasional coder and video game liker.">
+		<link rel="me" href="https://bsky.app/profile/dapierce.bsky.social">
 		<link rel="me" href="https://mastodon.social/@dapierce">
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="David🥧">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="David🥧">
-		
-		
-		<link rel="preload" as="font" type="font/woff2" href="/fonts/work-sans-v18-latin-regular.woff2" crossorigin>
-		<link rel="preload" as="font" type="font/woff2" href="/fonts/work-sans-v18-latin-800.woff" crossorigin>
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="David🥧">
 
 		
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
+		<link rel="preload" as="font" type="font/woff2" href="/eleventy-base-blog/fonts/work-sans-v18-latin-regular.woff2" crossorigin="">
+		<link rel="preload" as="font" type="font/woff2" href="/eleventy-base-blog/fonts/work-sans-v18-latin-800.woff" crossorigin="">
+
 		
+		<link rel="apple-touch-icon" sizes="180x180" href="/eleventy-base-blog/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/eleventy-base-blog/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/eleventy-base-blog/favicon-16x16.png">
+		<link rel="manifest" href="/eleventy-base-blog/site.webmanifest">
 		
-		
-		<style>.gallerylist a[href]{color:#d3d3d3}.gallerylist{display:grid;gap:4px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));padding:0}.gallerylist li{list-style-type:none;line-height:0}.gallerylist img{aspect-ratio:1/1;object-fit:cover;height:auto;width:100%}.front-caption{display:none;text-align:center}.full-caption{display:inline-table;position:absolute;left:0;right:0;margin:0 auto;bottom:1em;color:#fff;text-shadow:0 0 8px #000}@media (max-width:520px){main{padding:0!important}.gallerylist{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1em}.gallerylist{gap:1em}.front-caption{display:block}}div.cssbox{display:inline-block}span.cssbox_full{z-index:999999;position:fixed;height:100%;width:100%;background-color:rgba(0,0,0,.8);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);top:0;left:0;opacity:0;pointer-events:none;cursor:default;transition:all .2s linear}span.cssbox_full img{position:fixed;margin:0;padding:0;max-height:90%;max-width:90%;top:50%;left:50%;margin-right:-50%;transform:translate(-50%,-50%);object-fit:contain}a.cssbox_close,a.cssbox_next,a.cssbox_prev{z-index:999999;position:fixed;text-decoration:none;visibility:hidden;font-size:48px;text-shadow:0 0 8px #000}a.cssbox_close:hover,a.cssbox_next:hover,a.cssbox_prev:hover{background-image:none;color:#fff}a.cssbox_close{top:0;right:0;padding:1em;width:100%;height:100%}a.cssbox_close::after{content:'\00d7'}a.cssbox_next,a.cssbox_prev{top:50%;transform:translate(0,-50%)}a.cssbox_prev{left:2%;padding:20% 46% 20% 0}a.cssbox_next{right:2%;padding:20% 0 20% 46%}a:target~a.cssbox_close,a:target~a.cssbox_next,a:target~a.cssbox_prev{visibility:visible}a:target>span.cssbox_thumb+span.cssbox_full{visibility:visible;opacity:1;pointer-events:initial}@media (max-width:520px){span.cssbox_full img{max-height:100%;max-width:100%}}@font-face{font-display:swap;font-family:'Work Sans';font-style:normal;font-weight:400;src:url('/fonts/work-sans-v18-latin-regular.woff2') format('woff2'),url('/fonts/work-sans-v18-latin-regular.woff') format('woff')}@font-face{font-display:swap;font-family:'Work Sans';font-style:italic;font-weight:400;src:url('/fonts/work-sans-v18-latin-italic.woff2') format('woff2'),url('/fonts/work-sans-v18-latin-italic.woff') format('woff')}@font-face{font-display:swap;font-family:'Work Sans';font-style:normal;font-weight:800;src:url('/fonts/work-sans-v18-latin-800.woff2') format('woff2'),url('/fonts/work-sans-v18-latin-800.woff') format('woff')}@font-face{font-display:swap;font-family:'Work Sans';font-style:italic;font-weight:800;src:url('/fonts/work-sans-v18-latin-800italic.woff2') format('woff2'),url('/fonts/work-sans-v18-latin-800italic.woff') format('woff')}:root{--text-color-black:#444444;--gradient:linear-gradient(140deg, #5fc5b4 15%, #33ccff);--gradient-alpha-light:linear-gradient(140deg,
+		<style>/* Gallery list */
+
+.gallerylist a[href] {
+  color: lightgray;
+}
+
+.gallerylist {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 0;
+}
+
+.gallerylist li {
+  list-style-type: none;
+  line-height: 0;
+}
+
+.gallerylist img {
+  aspect-ratio: 1/1; 
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+.front-caption {
+  display: none;
+  text-align: center;
+}
+
+.full-caption {
+  display: inline-table;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 1em;
+  color: white;
+  text-shadow: 0 0 8px black;
+}
+
+@media (max-width: 520px) {
+  main {
+    padding: 0 !important;
+  }
+  .gallerylist {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1em;
+  }
+  .gallerylist {
+    gap: 1em;
+  }
+  .front-caption {
+    display: block;
+  }
+}
+/* The work below, CSSBox, is released under the Creative Commons
+  Attribution-ShareAlike 4.0 license and is available on
+  https://github.com/TheLastProject/CSSBox. You are not required to add
+  additional credit to your website, just leave the above text in this file */
+div.cssbox {
+display: inline-block;
+}
+
+span.cssbox_full {
+z-index: 999999;
+position: fixed;
+height: 100%;
+width: 100%;
+background-color: rgba(0,0,0,0.8);
+-webkit-backdrop-filter: blur(8px);
+backdrop-filter: blur(8px);
+top: 0;
+left: 0;
+opacity: 0;
+pointer-events: none;
+cursor: default;
+transition: all 0.2s linear;
+}
+
+span.cssbox_full img {
+position: fixed;
+margin: 0;
+padding: 0;
+max-height: 90%;
+max-width: 90%;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+object-fit: contain;
+}
+
+a.cssbox_close,
+a.cssbox_prev,
+a.cssbox_next {
+z-index: 999999;
+position: fixed;
+text-decoration: none;
+visibility: hidden;
+font-size: 48px;
+text-shadow: 0 0 8px black;
+}
+
+a.cssbox_close:hover,
+a.cssbox_prev:hover,
+a.cssbox_next:hover {
+  background-image: none;
+  color: white;
+}
+
+a.cssbox_close {
+top: 0%;
+right: 0%;
+padding: 1em;
+width: 100%;
+height: 100%;
+}
+
+a.cssbox_close::after {
+content: '\00d7';
+}
+
+a.cssbox_prev,
+a.cssbox_next {
+top: 50%;
+transform: translate(0%, -50%);
+}
+
+a.cssbox_prev {
+left: 2%;
+padding: 20% 46% 20% 0;
+}
+
+a.cssbox_next {
+right: 2%;
+padding: 20% 0 20% 46%;
+}
+
+a:target ~ a.cssbox_close,
+a:target ~ a.cssbox_prev,
+a:target ~ a.cssbox_next {
+visibility: visible;
+}
+
+a:target > span.cssbox_thumb + span.cssbox_full {
+visibility: visible;
+opacity: 1;
+pointer-events: initial;
+}
+/* This is the end of CSSBox */
+
+@media (max-width: 520px) {
+
+span.cssbox_full img {
+  max-height: 100%;
+  max-width: 100%;
+  }
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* work-sans-regular - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/work-sans-v18-latin-regular.woff2') format('woff2'),
+		url('/fonts/work-sans-v18-latin-regular.woff') format('woff');
+}
+
+/* work-sans-italic - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Work Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url('/fonts/work-sans-v18-latin-italic.woff2') format('woff2'),
+		url('/fonts/work-sans-v18-latin-italic.woff') format('woff');
+}
+
+/* work-sans-800 - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 800;
+	src: url('/fonts/work-sans-v18-latin-800.woff2') format('woff2'),
+		url('/fonts/work-sans-v18-latin-800.woff') format('woff');
+}
+
+/* work-sans-800italic - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Work Sans';
+	font-style: italic;
+	font-weight: 800;
+	src: url('/fonts/work-sans-v18-latin-800italic.woff2') format('woff2'),
+		url('/fonts/work-sans-v18-latin-800italic.woff') format('woff');
+}
+
+/* TODO: use more defaults in rest of css, replace with these vars */
+:root {
+	/* colors */
+	--text-color-black: #444444;
+	--gradient: linear-gradient(140deg, #5fc5b4 15%, #33ccff);
+	--gradient-alpha-light: linear-gradient(140deg,
 			rgba(95, 197, 180, 0.2) 15%,
-			rgba(51, 204, 255, 0.2));--gradient-alpha-dark:linear-gradient(140deg,
+			rgba(51, 204, 255, 0.2));
+	--gradient-alpha-dark: linear-gradient(140deg,
 			rgba(95, 197, 180, 0.7) 15%,
-			rgba(51, 204, 255, 0.7));--color-seaform:rgb(95, 197, 180);--color-blue:#33ccff;--shadow-large:0 4px 16px rgba(0, 0, 0, 0.25);--shadow-small:0 2px 8px rgba(0, 0, 0, 0.3);--theme-light-bg:#ffffff;--theme-light-text:#444444;--theme-dark-bg:#444444;--theme-dark-text:#ffffff;--content-width:45em;--frame-padding:0 2em;--font-family:"Work Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";--font-family-monospace:ui-monospace,"Cascadia Code",SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;--font-size-base:18px}:root{--color-gray-20:#e0e0e0;--color-gray-50:#C0C0C0;--color-gray-90:#333;--background-color:#fff;--text-color:var(--color-gray-90);--text-color-link:#082840;--text-color-link-active:#5f2b48;--text-color-link-visited:#17050F;--syntax-tab-size:2}*{box-sizing:border-box}body,html{padding:0;margin:0 auto;font-family:var(--font-family);font-size:var(--font-size-base);color:var(--text-color);background-color:#b9f2f6}html{overflow-y:scroll}body{display:flex;flex-direction:column;min-height:100vh}main{flex:1;max-width:var(--content-width);margin:0 auto;padding:1rem 2.2rem;width:100%}.visually-hidden{clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}h1,h2,h3,h4,h5,h6{font-family:var(--font-family)}p:last-child{margin-bottom:0}li,p{line-height:1.6}a{color:var(--text-color-link)}a:visited{color:var(--text-color-link-visited)}a:active,a:hover{color:var(--text-color-link-active)}a:focus{outline:dotted 2px var(--text-color-black)}a:active{outline:0}main :first-child{margin-top:0}main a:active,main a:hover{background-size:100% 50%;background-position:0 100%;background-repeat:no-repeat;background-image:linear-gradient(var(--color-blue) 0,var(--color-blue) 100%);text-decoration:none}.links-nextprev{list-style:none;border-top:1px dashed var(--color-gray-20);padding:1em 0}table{margin:1em 0}table td,table th{padding-right:1em}code,pre{font-family:var(--font-family-monospace)}pre:not([class*=language-]){margin:.5em 0;line-height:1.375;-moz-tab-size:var(--syntax-tab-size);-o-tab-size:var(--syntax-tab-size);tab-size:var(--syntax-tab-size);-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal}code{word-break:break-all}p code{background-color:var(--color-blue);border-radius:4px;padding:4px;word-break:normal}footer,header{padding:1rem 0;width:100%}.header-items{max-width:var(--content-width);margin:0 auto;padding:0 2.2em;display:flex;gap:1em .5em;flex-wrap:wrap;align-items:center;justify-content:space-between}.home-link{font-family:var(--font-family);font-size:1.4em;font-weight:700;margin-right:1em;text-decoration:none;padding:4px 4px 4px 8px;margin:-4px .8em -4px -4px;background-color:rgba(255,255,255,.7);border-radius:4px;transition:.2s background-color cubic-bezier(.4, 0, .2, 1);box-shadow:3px 3px 0 var(--color-blue);white-space:nowrap}.home-link:focus{background-color:rgba(255,255,255,.7)}.home-link:hover{background-color:#fff}.home-link:active{position:relative;top:3px;left:3px;background-color:#fff;box-shadow:none}.home-link[href][aria-current=page]{background-color:#fff}.home-link:link:not(:hover){text-decoration:none}.nav{display:flex;flex-wrap:wrap;font-family:var(--font-family);gap:1em;padding:0;margin:0}.nav a,footer a{text-decoration:none;transition:background-size 50ms ease-in-out;background-size:100% 30%;background-position:0 100%;background-repeat:no-repeat;background-image:linear-gradient(var(--color-blue) 0,var(--color-blue) 100%);white-space:nowrap}.nav a:hover,footer a:hover{color:var(--text-color);background-size:100% 100%;background-position:0 100%;border-radius:6px;padding:4px 4px;margin:-4px -4px}.nav a:active,.nav a:focus,footer a:active,footer a:focus{background:rgba(255,255,255,.7);background-position:0 100%;border-radius:6px;padding:4px 4px;margin:-4px -4px}.nav a:active{background:#fff}.nav-item{display:inline-block}.nav-item a[href]:not(:hover){text-decoration:none}.nav a[href][aria-current=page]{background:#fff;background-position:0 100%;border-radius:6px;padding:4px 4px;margin:-4px -4px}footer{margin:0 auto;padding:1em 2.2em;align-items:center}footer p{margin:0;text-align:center}.postlist{list-style:none;padding:0;padding-left:1.5rem}.postlist li{margin-bottom:.6em}.postlist p{margin-left:2em}.postlist-item{display:flex;flex-wrap:wrap;align-items:baseline;counter-increment:start-from -1;margin-bottom:1em}.postlist-date,.postlist-item:before{font-size:.8125em;color:var(--color-gray-90)}.postlist-date{word-spacing:-0.5px}.postlist-link{font-size:1.1875em;font-weight:700;padding-left:.25em;padding-right:.5em;text-underline-position:from-font;text-underline-offset:0;text-decoration-thickness:1px}.postlist-item-active .postlist-link{font-weight:700}.post-tag{display:inline-flex;align-items:center;justify-content:center;text-transform:capitalize;font-style:italic}.postlist-item>.post-tag{align-self:center}.post-metadata{display:inline-flex;flex-wrap:wrap;gap:.5em;list-style:none;padding:0;margin:0}.post-metadata time{margin-right:1em}.post-featured-link{list-style:none;margin-left:0;padding-left:0}.header-anchor{text-decoration:none;font-style:normal;font-size:1em;margin-left:.1em}a[href].header-anchor,a[href].header-anchor:visited{color:transparent}a[href].header-anchor:focus,a[href].header-anchor:hover{text-decoration:underline}:hover>a[href].header-anchor,a[href].header-anchor:focus{color:#aaa}h2+.header-anchor{font-size:1.5em}@media (max-width:420px){.header-items{padding:0 1.2rem}main{font-size:.8em;padding:1rem 1.2rem}.header-items,footer{font-size:.8em}}</style>
+			rgba(51, 204, 255, 0.7));
+	--color-seaform: rgb(95, 197, 180);
+	--color-blue: #33ccff;
+
+	/* box shadows */
+	--shadow-large: 0 4px 16px rgba(0, 0, 0, 0.25);
+	--shadow-small: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+	/* themes */
+	--theme-light-bg: #ffffff;
+	--theme-light-text: #444444;
+	--theme-dark-bg: #444444;
+	--theme-dark-text: #ffffff;
+
+	/* design */
+	--content-width: 45em;
+	--frame-padding: 0 2em;
+
+	/* typography */
+	--font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	--font-family-monospace: ui-monospace, "Cascadia Code", SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+	--font-size-base: 18px;
+	/* --title-weight: 300;
+  --link-weight: 400;
+  --body-reg-weight: 400;
+  --body-bold-weight: 900; */
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-70: #555;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/*--text-color is assigned to --color-gray-_ above
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}*/
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	font-size: var(--font-size-base);
+	color: var(--text-color);
+	background-color: #b9f2f6;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+	max-width: var(--content-width);
+	margin: 0 auto;
+	padding: 1rem 2.2rem;
+	width: 100%;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-family);
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+p,
+li {
+	line-height: 1.6;
+}
+
+a {
+	color: var(--text-color-link);
+}
+
+a:visited {
+	color: var(--text-color-link-visited);
+}
+
+a:hover,
+a:active {
+	color: var(--text-color-link-active);
+}
+
+a:focus {
+	outline: dotted 2px var(--text-color-black);
+}
+
+a:active {
+	outline: none;
+}
+
+main :first-child {
+	margin-top: 0;
+}
+
+main a:hover,
+main a:active {
+	background-size: 100% 50%;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(var(--color-blue) 0%,
+		var(--color-blue) 100%);
+	text-decoration: none;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+.links-nextprev-prev {
+	padding-right: .5em;
+}
+
+.links-nextprev-next {
+	padding-left: .5em;
+}
+
+table {
+	margin: 1em 0;
+}
+
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375;
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+
+code {
+	word-break: break-all;
+}
+
+p code {
+	background-color: var(--color-blue);
+	border-radius: 4px;
+	padding: 4px;
+	word-break: normal;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img {
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+p img {
+	object-fit: contain;
+	width: 100%;
+	max-height: 580px;
+}
+
+/* Header */
+header,
+footer {
+	/* background: var(--gradient-alpha-dark); */
+	padding: 1rem 0;
+	width: 100%;
+}
+
+/* header:after {
+	content: "";
+	display: table;
+	clear: both;
+} */
+
+.header-items {
+	max-width: var(--content-width);
+	margin: 0 auto;
+	padding: 0 2.2em;
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.home-link {
+	font-family: var(--font-family);
+	font-size: 1.4em;
+	font-weight: 700;
+	margin-right: 1em;
+	text-decoration: none;
+	padding: 4px 4px 4px 8px;
+	margin: -4px .8em -4px -4px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 4px;
+	transition: 200ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 3px 3px 0 var(--color-blue);
+	white-space: nowrap;
+}
+
+.home-link:focus {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.home-link:hover {
+	background-color: white;
+}
+
+.home-link:active {
+	position: relative;
+	top: 3px;
+	left: 3px;
+	background-color: white;
+	box-shadow: none;
+}
+
+.home-link[href][aria-current="page"] {
+	background-color: white;
+}
+
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: var(--font-family);
+	gap: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+.nav a,
+footer a {
+	text-decoration: none;
+	transition: background-size 50ms ease-in-out;
+	background-size: 100% 30%;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(var(--color-blue) 0%,
+			var(--color-blue) 100%);
+	white-space: nowrap;
+}
+
+.nav a:hover,
+footer a:hover {
+	color: var(--text-color);
+	background-size: 100% 100%;
+	background-position: 0 100%;
+	border-radius: 6px;
+	padding: 4px 4px;
+	margin: -4px -4px;
+}
+
+.nav a:active,
+.nav a:focus,
+footer a:active,
+footer a:focus {
+	background: rgba(255, 255, 255, 0.7);
+	background-position: 0 100%;
+	border-radius: 6px;
+	padding: 4px 4px;
+	margin: -4px -4px;
+}
+
+.nav a:active {
+	background: white;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+
+.nav a[href][aria-current="page"] {
+	background: white;
+	background-position: 0 100%;
+	border-radius: 6px;
+	padding: 4px 4px;
+	margin: -4px -4px;
+}
+
+/* Footer */
+footer {
+	margin: 0 auto;
+	padding: 1em 2.2em;
+	align-items: center;
+
+}
+
+footer p {
+	margin: 0;
+	text-align: center;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+
+.postlist li {
+	margin-bottom: .6em;
+}
+
+.postlist p {
+	margin-left: 2em;
+}
+
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em;
+	/* 13px /16 */
+	color: var(--color-gray-90);
+}
+
+.postlist-date {
+	word-spacing: -0.5px;
+}
+
+.postlist-link {
+	font-size: 1.1875em;
+	font-weight: 700;
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+.postlist-item>.post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.post-metadata time {
+	margin-right: 1em;
+}
+
+.post-featured-link {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+
+a[href].header-anchor:focus,
+:hover>a[href].header-anchor {
+	color: #aaa;
+}
+
+h2+.header-anchor {
+	font-size: 1.5em;
+}
+
+/* Make navigation easier on phone screens */
+@media (max-width: 540px) {
+
+	nav {
+		width: 100%;
+	}
+	
+	.nav {
+		justify-content: space-between;
+	}
+}
+
+/* Reduce font-sizes for smaller phone screens */
+@media (max-width: 420px) {
+
+	.header-items {
+		padding: 0 1.2rem;
+	}
+
+	main {
+		font-size: .8em;
+		padding: 1rem 1.2rem;
+	}
+
+	footer,
+	.header-items {
+		font-size: .8em;
+	}
+
+}</style>
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 		<header>
 			<div class="header-items">
-				<a href="/" class="home-link">David🥧</a>
+				<a href="/eleventy-base-blog/" class="home-link">David🥧</a>
 				<nav>
-					<h2 class="visually-hidden">Top level navigation menu</h2>
+					<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 					<ul class="nav">
-						<li class="nav-item"><a href="/blog/">Archive</a></li>
-						<li class="nav-item"><a href="/gallery/" aria-current="page">Gallery</a></li>
-						<li class="nav-item"><a href="/notes/">Notes</a></li>
-						<li class="nav-item"><a href="/about/">About Me</a></li>
+							<li class="nav-item"><a href="/eleventy-base-blog/blog/">Archive</a></li>
+							<li class="nav-item"><a href="/eleventy-base-blog/gallery/" aria-current="page">Gallery</a></li>
+							<li class="nav-item"><a href="/eleventy-base-blog/notes/">Notes</a></li>
+							<li class="nav-item"><a href="/eleventy-base-blog/about/">About Me</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 
 		<main id="skip">
-			
+			<heading-anchors>
+				
 
 
 
@@ -54,9 +779,9 @@
   <li>
     <span class="cssbox">
       <a id="image1" href="#image1">
-        <span class="cssbox_thumb"><picture><source type="image/avif" srcset="/img/cr5RFj_p-n-250.avif 250w, /img/cr5RFj_p-n-500.avif 500w" sizes="250,500"><source type="image/jpeg" srcset="/img/cr5RFj_p-n-250.jpeg 250w, /img/cr5RFj_p-n-500.jpeg 500w" sizes="250,500"><img alt="Pencil drawing of a person reclining, head turned away." loading="lazy" decoding="async" src="/img/cr5RFj_p-n-250.jpeg" width="500" height="625"></picture></span>
+        <span class="cssbox_thumb"><picture><source type="image/avif" srcset="/eleventy-base-blog/gallery/cr5RFj_p-n-1440.avif 1440w"><source type="image/webp" srcset="/eleventy-base-blog/gallery/cr5RFj_p-n-1440.webp 1440w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/gallery/cr5RFj_p-n-1440.jpeg" alt="Pencil drawing of a person reclining, head turned away." [250,="" 500],="" 500]="" width="1440" height="1800"></picture></span>
         <span class="cssbox_full">
-          <picture><source type="image/avif" srcset="/img/cr5RFj_p-n-500.avif 500w, /img/cr5RFj_p-n-1000.avif 1000w, /img/cr5RFj_p-n-1440.avif 1440w" sizes="500,1000,"><source type="image/jpeg" srcset="/img/cr5RFj_p-n-500.jpeg 500w, /img/cr5RFj_p-n-1000.jpeg 1000w, /img/cr5RFj_p-n-1440.jpeg 1440w" sizes="500,1000,"><img alt="Pencil drawing of a person reclining, head turned away." loading="lazy" decoding="async" src="/img/cr5RFj_p-n-500.jpeg" width="1440" height="1800"></picture>
+          <picture><source type="image/avif" srcset="/eleventy-base-blog/gallery/cr5RFj_p-n-1440.avif 1440w"><source type="image/webp" srcset="/eleventy-base-blog/gallery/cr5RFj_p-n-1440.webp 1440w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/gallery/cr5RFj_p-n-1440.jpeg" alt="Pencil drawing of a person reclining, head turned away." [500,="" 1000,="" auto],="" auto]="" width="1440" height="1800"></picture>
           <div class="full-caption"><p>15 minute figure drawing - Feb 2023</p></div>
         </span>
       </a>
@@ -73,9 +798,9 @@
   <li>
     <span class="cssbox">
       <a id="image2" href="#image2">
-        <span class="cssbox_thumb"><picture><source type="image/avif" srcset="/img/0qTKWzFvhA-250.avif 250w, /img/0qTKWzFvhA-500.avif 500w" sizes="250,500"><source type="image/jpeg" srcset="/img/0qTKWzFvhA-250.jpeg 250w, /img/0qTKWzFvhA-500.jpeg 500w" sizes="250,500"><img alt="Sun sets behind clouds in a bay surrounded by a city on hills. Fadded clouds hide part of the hill, making a floating city above." loading="lazy" decoding="async" src="/img/0qTKWzFvhA-250.jpeg" width="500" height="352"></picture></span>
+        <span class="cssbox_thumb"><picture><source type="image/avif" srcset="/eleventy-base-blog/gallery/0qTKWzFvhA-1200.avif 1200w"><source type="image/webp" srcset="/eleventy-base-blog/gallery/0qTKWzFvhA-1200.webp 1200w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/gallery/0qTKWzFvhA-1200.jpeg" alt="Sun sets behind clouds in a bay surrounded by a city on hills. Fadded clouds hide part of the hill, making a floating city above." [250,="" 500],="" 500]="" width="1200" height="846"></picture></span>
         <span class="cssbox_full">
-          <picture><source type="image/avif" srcset="/img/0qTKWzFvhA-500.avif 500w, /img/0qTKWzFvhA-1000.avif 1000w, /img/0qTKWzFvhA-1200.avif 1200w" sizes="500,1000,"><source type="image/jpeg" srcset="/img/0qTKWzFvhA-500.jpeg 500w, /img/0qTKWzFvhA-1000.jpeg 1000w, /img/0qTKWzFvhA-1200.jpeg 1200w" sizes="500,1000,"><img alt="Sun sets behind clouds in a bay surrounded by a city on hills. Fadded clouds hide part of the hill, making a floating city above." loading="lazy" decoding="async" src="/img/0qTKWzFvhA-500.jpeg" width="1200" height="846"></picture>
+          <picture><source type="image/avif" srcset="/eleventy-base-blog/gallery/0qTKWzFvhA-1200.avif 1200w"><source type="image/webp" srcset="/eleventy-base-blog/gallery/0qTKWzFvhA-1200.webp 1200w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/gallery/0qTKWzFvhA-1200.jpeg" alt="Sun sets behind clouds in a bay surrounded by a city on hills. Fadded clouds hide part of the hill, making a floating city above." [500,="" 1000,="" auto],="" auto]="" width="1200" height="846"></picture>
           <div class="full-caption"><p>Weightless city - Dec 2022</p></div>
         </span>
       </a>
@@ -94,9 +819,9 @@
   <li>
     <span class="cssbox">
       <a id="image3" href="#image3">
-        <span class="cssbox_thumb"><picture><source type="image/avif" srcset="/img/CG-KZNeu2y-250.avif 250w, /img/CG-KZNeu2y-500.avif 500w" sizes="250,500"><source type="image/jpeg" srcset="/img/CG-KZNeu2y-250.jpeg 250w, /img/CG-KZNeu2y-500.jpeg 500w" sizes="250,500"><img alt="Ink drawing of a dilapidated overpass over water." loading="lazy" decoding="async" src="/img/CG-KZNeu2y-250.jpeg" width="500" height="436"></picture></span>
+        <span class="cssbox_thumb"><picture><source type="image/avif" srcset="/eleventy-base-blog/gallery/CG-KZNeu2y-1080.avif 1080w"><source type="image/webp" srcset="/eleventy-base-blog/gallery/CG-KZNeu2y-1080.webp 1080w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/gallery/CG-KZNeu2y-1080.jpeg" alt="Ink drawing of a dilapidated overpass over water." [250,="" 500],="" 500]="" width="1080" height="943"></picture></span>
         <span class="cssbox_full">
-          <picture><source type="image/avif" srcset="/img/CG-KZNeu2y-500.avif 500w, /img/CG-KZNeu2y-1000.avif 1000w, /img/CG-KZNeu2y-1080.avif 1080w" sizes="500,1000,"><source type="image/jpeg" srcset="/img/CG-KZNeu2y-500.jpeg 500w, /img/CG-KZNeu2y-1000.jpeg 1000w, /img/CG-KZNeu2y-1080.jpeg 1080w" sizes="500,1000,"><img alt="Ink drawing of a dilapidated overpass over water." loading="lazy" decoding="async" src="/img/CG-KZNeu2y-500.jpeg" width="1080" height="943"></picture>
+          <picture><source type="image/avif" srcset="/eleventy-base-blog/gallery/CG-KZNeu2y-1080.avif 1080w"><source type="image/webp" srcset="/eleventy-base-blog/gallery/CG-KZNeu2y-1080.webp 1080w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/gallery/CG-KZNeu2y-1080.jpeg" alt="Ink drawing of a dilapidated overpass over water." [500,="" 1000,="" auto],="" auto]="" width="1080" height="943"></picture>
           <div class="full-caption"><p>Overpass - Oct 2022</p></div>
         </span>
       </a>
@@ -115,9 +840,9 @@
   <li>
     <span class="cssbox">
       <a id="image4" href="#image4">
-        <span class="cssbox_thumb"><picture><source type="image/avif" srcset="/img/wzAvmhXvHg-250.avif 250w, /img/wzAvmhXvHg-500.avif 500w" sizes="250,500"><source type="image/jpeg" srcset="/img/wzAvmhXvHg-250.jpeg 250w, /img/wzAvmhXvHg-500.jpeg 500w" sizes="250,500"><img alt="Portrait of a man, wearing glasses and a beard, with a pink shirt in front of a blue background." loading="lazy" decoding="async" src="/img/wzAvmhXvHg-250.jpeg" width="500" height="666"></picture></span>
+        <span class="cssbox_thumb"><picture><source type="image/avif" srcset="/eleventy-base-blog/gallery/wzAvmhXvHg-900.avif 900w"><source type="image/webp" srcset="/eleventy-base-blog/gallery/wzAvmhXvHg-900.webp 900w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/gallery/wzAvmhXvHg-900.jpeg" alt="Portrait of a man, wearing glasses and a beard, with a pink shirt in front of a blue background." [250,="" 500],="" 500]="" width="900" height="1200"></picture></span>
         <span class="cssbox_full">
-          <picture><source type="image/avif" srcset="/img/wzAvmhXvHg-500.avif 500w, /img/wzAvmhXvHg-900.avif 900w" sizes="500,1000,"><source type="image/jpeg" srcset="/img/wzAvmhXvHg-500.jpeg 500w, /img/wzAvmhXvHg-900.jpeg 900w" sizes="500,1000,"><img alt="Portrait of a man, wearing glasses and a beard, with a pink shirt in front of a blue background." loading="lazy" decoding="async" src="/img/wzAvmhXvHg-500.jpeg" width="900" height="1200"></picture>
+          <picture><source type="image/avif" srcset="/eleventy-base-blog/gallery/wzAvmhXvHg-900.avif 900w"><source type="image/webp" srcset="/eleventy-base-blog/gallery/wzAvmhXvHg-900.webp 900w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/gallery/wzAvmhXvHg-900.jpeg" alt="Portrait of a man, wearing glasses and a beard, with a pink shirt in front of a blue background." [500,="" 1000,="" auto],="" auto]="" width="900" height="1200"></picture>
           <div class="full-caption"><p>Myself, age 38 - June 2022</p></div>
         </span>
       </a>
@@ -133,12 +858,14 @@
 
 </ol>
 
+			</heading-anchors>
 		</main>
 
 		<footer>
-			<p>Copyright &copy; 2024 ~ <a href="/feed/feed.xml">RSS</a> ~ Made with coffee, tea and <a href="https://www.11ty.dev/">Eleventy</a></p>
+			<p>Copyright &copy; 2024 ~ <a href="/eleventy-base-blog/feed/feed.xml">RSS</a> ~ Made with coffee, tea and <a href="https://www.11ty.dev/">Eleventy</a></p>
 		</footer>
 
-		<!-- Current page: /gallery/ -->
+		<!-- This page `/gallery/` was built on 2024-12-15T06:33:07.231Z -->
+		<script type="module" src="/eleventy-base-blog/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

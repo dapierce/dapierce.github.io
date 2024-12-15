@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Retro emulation done easy</title>
+		<meta name="description" content="Consider a mini PC for your retro gaming needs">
+		<link rel="me" href="https://bsky.app/profile/dapierce.bsky.social">
+		<link rel="me" href="https://mastodon.social/@dapierce">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="David🥧">
+
+		
+		<link rel="preload" as="font" type="font/woff2" href="/eleventy-base-blog/fonts/work-sans-v18-latin-regular.woff2" crossorigin="">
+		<link rel="preload" as="font" type="font/woff2" href="/eleventy-base-blog/fonts/work-sans-v18-latin-800.woff" crossorigin="">
+
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/eleventy-base-blog/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/eleventy-base-blog/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/eleventy-base-blog/favicon-16x16.png">
+		<link rel="manifest" href="/eleventy-base-blog/site.webmanifest">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* work-sans-regular - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/work-sans-v18-latin-regular.woff2') format('woff2'),
+		url('/fonts/work-sans-v18-latin-regular.woff') format('woff');
+}
+
+/* work-sans-italic - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Work Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url('/fonts/work-sans-v18-latin-italic.woff2') format('woff2'),
+		url('/fonts/work-sans-v18-latin-italic.woff') format('woff');
+}
+
+/* work-sans-800 - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 800;
+	src: url('/fonts/work-sans-v18-latin-800.woff2') format('woff2'),
+		url('/fonts/work-sans-v18-latin-800.woff') format('woff');
+}
+
+/* work-sans-800italic - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Work Sans';
+	font-style: italic;
+	font-weight: 800;
+	src: url('/fonts/work-sans-v18-latin-800italic.woff2') format('woff2'),
+		url('/fonts/work-sans-v18-latin-800italic.woff') format('woff');
+}
+
+/* TODO: use more defaults in rest of css, replace with these vars */
+:root {
+	/* colors */
+	--text-color-black: #444444;
+	--gradient: linear-gradient(140deg, #5fc5b4 15%, #33ccff);
+	--gradient-alpha-light: linear-gradient(140deg,
+			rgba(95, 197, 180, 0.2) 15%,
+			rgba(51, 204, 255, 0.2));
+	--gradient-alpha-dark: linear-gradient(140deg,
+			rgba(95, 197, 180, 0.7) 15%,
+			rgba(51, 204, 255, 0.7));
+	--color-seaform: rgb(95, 197, 180);
+	--color-blue: #33ccff;
+
+	/* box shadows */
+	--shadow-large: 0 4px 16px rgba(0, 0, 0, 0.25);
+	--shadow-small: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+	/* themes */
+	--theme-light-bg: #ffffff;
+	--theme-light-text: #444444;
+	--theme-dark-bg: #444444;
+	--theme-dark-text: #ffffff;
+
+	/* design */
+	--content-width: 45em;
+	--frame-padding: 0 2em;
+
+	/* typography */
+	--font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	--font-family-monospace: ui-monospace, "Cascadia Code", SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+	--font-size-base: 18px;
+	/* --title-weight: 300;
+  --link-weight: 400;
+  --body-reg-weight: 400;
+  --body-bold-weight: 900; */
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-70: #555;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/*--text-color is assigned to --color-gray-_ above
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}*/
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	font-size: var(--font-size-base);
+	color: var(--text-color);
+	background-color: #b9f2f6;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+	max-width: var(--content-width);
+	margin: 0 auto;
+	padding: 1rem 2.2rem;
+	width: 100%;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-family);
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+p,
+li {
+	line-height: 1.6;
+}
+
+a {
+	color: var(--text-color-link);
+}
+
+a:visited {
+	color: var(--text-color-link-visited);
+}
+
+a:hover,
+a:active {
+	color: var(--text-color-link-active);
+}
+
+a:focus {
+	outline: dotted 2px var(--text-color-black);
+}
+
+a:active {
+	outline: none;
+}
+
+main :first-child {
+	margin-top: 0;
+}
+
+main a:hover,
+main a:active {
+	background-size: 100% 50%;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(var(--color-blue) 0%,
+		var(--color-blue) 100%);
+	text-decoration: none;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+.links-nextprev-prev {
+	padding-right: .5em;
+}
+
+.links-nextprev-next {
+	padding-left: .5em;
+}
+
+table {
+	margin: 1em 0;
+}
+
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375;
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+
+code {
+	word-break: break-all;
+}
+
+p code {
+	background-color: var(--color-blue);
+	border-radius: 4px;
+	padding: 4px;
+	word-break: normal;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img {
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+p img {
+	object-fit: contain;
+	width: 100%;
+	max-height: 580px;
+}
+
+/* Header */
+header,
+footer {
+	/* background: var(--gradient-alpha-dark); */
+	padding: 1rem 0;
+	width: 100%;
+}
+
+/* header:after {
+	content: "";
+	display: table;
+	clear: both;
+} */
+
+.header-items {
+	max-width: var(--content-width);
+	margin: 0 auto;
+	padding: 0 2.2em;
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.home-link {
+	font-family: var(--font-family);
+	font-size: 1.4em;
+	font-weight: 700;
+	margin-right: 1em;
+	text-decoration: none;
+	padding: 4px 4px 4px 8px;
+	margin: -4px .8em -4px -4px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 4px;
+	transition: 200ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 3px 3px 0 var(--color-blue);
+	white-space: nowrap;
+}
+
+.home-link:focus {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.home-link:hover {
+	background-color: white;
+}
+
+.home-link:active {
+	position: relative;
+	top: 3px;
+	left: 3px;
+	background-color: white;
+	box-shadow: none;
+}
+
+.home-link[href][aria-current="page"] {
+	background-color: white;
+}
+
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: var(--font-family);
+	gap: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+.nav a,
+footer a {
+	text-decoration: none;
+	transition: background-size 50ms ease-in-out;
+	background-size: 100% 30%;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(var(--color-blue) 0%,
+			var(--color-blue) 100%);
+	white-space: nowrap;
+}
+
+.nav a:hover,
+footer a:hover {
+	color: var(--text-color);
+	background-size: 100% 100%;
+	background-position: 0 100%;
+	border-radius: 6px;
+	padding: 4px 4px;
+	margin: -4px -4px;
+}
+
+.nav a:active,
+.nav a:focus,
+footer a:active,
+footer a:focus {
+	background: rgba(255, 255, 255, 0.7);
+	background-position: 0 100%;
+	border-radius: 6px;
+	padding: 4px 4px;
+	margin: -4px -4px;
+}
+
+.nav a:active {
+	background: white;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+
+.nav a[href][aria-current="page"] {
+	background: white;
+	background-position: 0 100%;
+	border-radius: 6px;
+	padding: 4px 4px;
+	margin: -4px -4px;
+}
+
+/* Footer */
+footer {
+	margin: 0 auto;
+	padding: 1em 2.2em;
+	align-items: center;
+
+}
+
+footer p {
+	margin: 0;
+	text-align: center;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+
+.postlist li {
+	margin-bottom: .6em;
+}
+
+.postlist p {
+	margin-left: 2em;
+}
+
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em;
+	/* 13px /16 */
+	color: var(--color-gray-90);
+}
+
+.postlist-date {
+	word-spacing: -0.5px;
+}
+
+.postlist-link {
+	font-size: 1.1875em;
+	font-weight: 700;
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+.postlist-item>.post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.post-metadata time {
+	margin-right: 1em;
+}
+
+.post-featured-link {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+
+a[href].header-anchor:focus,
+:hover>a[href].header-anchor {
+	color: #aaa;
+}
+
+h2+.header-anchor {
+	font-size: 1.5em;
+}
+
+/* Make navigation easier on phone screens */
+@media (max-width: 540px) {
+
+	nav {
+		width: 100%;
+	}
+	
+	.nav {
+		justify-content: space-between;
+	}
+}
+
+/* Reduce font-sizes for smaller phone screens */
+@media (max-width: 420px) {
+
+	.header-items {
+		padding: 0 1.2rem;
+	}
+
+	main {
+		font-size: .8em;
+		padding: 1rem 1.2rem;
+	}
+
+	footer,
+	.header-items {
+		font-size: .8em;
+	}
+
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+		<header>
+			<div class="header-items">
+				<a href="/eleventy-base-blog/" class="home-link">David🥧</a>
+				<nav>
+					<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+					<ul class="nav">
+							<li class="nav-item"><a href="/eleventy-base-blog/blog/">Archive</a></li>
+							<li class="nav-item"><a href="/eleventy-base-blog/gallery/">Gallery</a></li>
+							<li class="nav-item"><a href="/eleventy-base-blog/notes/">Notes</a></li>
+							<li class="nav-item"><a href="/eleventy-base-blog/about/">About Me</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="retro-emulation-done-easy">Retro emulation done easy</h1>
+
+
+<p><picture><source type="image/avif" srcset="/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/vfInmV6pun-1080.avif 1080w"><source type="image/webp" srcset="/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/vfInmV6pun-1080.webp 1080w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/vfInmV6pun-1080.png" alt="A screenshot of Shadow of the Colossus (PS2)" width="1080" height="720"></picture></p>
+
+<ul class="post-metadata">
+	<li><time datetime="2024-06-26">26 June 2024</time></li>
+	<li><a href="/eleventy-base-blog/tags/longform/" class="post-tag">longform</a>, </li>
+	<li><a href="/eleventy-base-blog/tags/video-games/" class="post-tag">video games</a>, </li>
+	<li><a href="/eleventy-base-blog/tags/retro/" class="post-tag">retro</a>, </li>
+	<li><a href="/eleventy-base-blog/tags/emulation/" class="post-tag">emulation</a></li>
+</ul>
+
+
+
+<p>After a year enjoying the comfort of playing old games on my TV, I can fully recommend my retro gaming setup: a mini PC running Batocera Linux.</p>
+<p>For a long time I've been using a Raspberry Pi 3 running <a href="https://retropie.org.uk/">RetroPie</a>, and it certainly got the job done on anything less powerful than the N64. But over time I was dealing with a lot of <em>little</em> annoyances to this setup that just accumulated over the years.</p>
+<p>A lot of it just came down to the defaults. <strong>I don't like Retropie's default settings.</strong> Whenever I messed up a config or an update did something unexpected, I would end up needing to reinstall Retropie and go through the process of changing all the configurations back the way I needed to fit my needs. This meant an hour+ of setting up networking settings, finicky controller pairings, Retroarch configs and more.</p>
+<p>Eventually, I moved over to <a href="https://batocera.org/">Batocera</a>. <em>Everything just works</em>, straight from the Linux image. If you have a semi-popular controller to use with it, chances are it'll just work correctly once you plug it in or set the controller to Bluetooth pairing mode. PS4 controller? That touch pad area is automatically configured to be a mouse or cursor depending on the system! If you don't want to mess with options and menus, chances are you'll be just fine with most of Batocera's defaults (though your hardware may nessesitate changing video/audio settings).</p>
+<p>And for the things you do want to change, chances are it's in the main menu. All the things in Retropie that I had to manually tinker in config files and Retroarch are now just Batocera's main menu at the start. The interface is so polished, it's amazing that this is the work of hobbyists.</p>
+<p>You don't even really have to mess with Retroarch's infamous UI to do things like set up resolution, video filters, save state settings, etc. Even core-specific settings can be accessed at the system level from these menus. Within a few minutes of flipping through settings on the main menu, I end up with an amazing retro gaming experience without ever touching Retroarch's UI.</p>
+<p>So now that I'm done gushing about Batocera, I found one more way to take the experience further: using a higher powered PC to play on. The old Pi 3 is good at the older stuff, but for some arcade games, Dreamcast games, PS2 and Gamecube, I needed more power.</p>
+<picture><source type="image/avif" srcset="/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/1QuYWWKch--640.avif 640w"><source type="image/webp" srcset="/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/1QuYWWKch--640.webp 640w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/1QuYWWKch--640.png" alt="A screenshot from Shenmue (Dreamcast) with scanline filter" width="640" height="480"></picture>
+<p>But not <em>that</em> much power.</p>
+<p>That's where online auctions come in. It turns out there are thousands of old, under-utilized mini PCs that will fit neatly next to your other consoles and television, and cost under $100 that are pleanty powerful enough to run your favorite 3D retro games.</p>
+<p>Stick Batocera on one of these modest 6+ year old machines with laptop components and this will beat any Raspberry Pi retro gaming setup.</p>
+<p>It's not a MiSTer, but perfect hardware recreation is not something I can personally discern from modern emulators running on powerful enough computers. If you notice the difference in sound or timing, that's actually pretty amazing--but for me, an $80 computer and a few different controllers depending on the system get me all the way there.</p>
+<p>Last thing: save states are a big deal to me and one of my favorite features of this setup is <strong>&quot;Auto Save/Load&quot;</strong>. Turn it on, and you can start and leave your games at any time, and just resume from where you left off without worrying about in-game saves or manually saving and loading states. In my busier days it feels good to get in a few minutes of a game, and then be able to get back to it later, no fuss.</p>
+<picture><source type="image/avif" srcset="/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/vkj13V4YWJ-1920.avif 1920w"><source type="image/webp" srcset="/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/vkj13V4YWJ-1920.webp 1920w"><img loading="lazy" decoding="async" src="/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/vkj13V4YWJ-1920.png" alt="A screenshot from Ys 3 with the text 'To be continued'" width="1920" height="1080"></picture>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/eleventy-base-blog/blog/2024-05-10-rollback-to-the-old/">Rollback to the old</a></li><li class="links-nextprev-next">Next →<br><a href="/eleventy-base-blog/blog/2024-12-01-mystic-ark/">Mystic Ark</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p>Copyright &copy; 2024 ~ <a href="/eleventy-base-blog/feed/feed.xml">RSS</a> ~ Made with coffee, tea and <a href="https://www.11ty.dev/">Eleventy</a></p>
+		</footer>
+
+		<!-- This page `/blog/2024-06-26-retro-emulation-done-easy/` was built on 2024-12-15T06:33:07.234Z -->
+		<script type="module" src="/eleventy-base-blog/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>

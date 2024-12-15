@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tagged &#39;video games&#39;</title>
+		<meta name="description" content="Personal website of David Aaron Pierce, artist, occasional coder and video game liker.">
+		<link rel="me" href="https://bsky.app/profile/dapierce.bsky.social">
+		<link rel="me" href="https://mastodon.social/@dapierce">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="David🥧">
+
+		
+		<link rel="preload" as="font" type="font/woff2" href="/eleventy-base-blog/fonts/work-sans-v18-latin-regular.woff2" crossorigin="">
+		<link rel="preload" as="font" type="font/woff2" href="/eleventy-base-blog/fonts/work-sans-v18-latin-800.woff" crossorigin="">
+
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/eleventy-base-blog/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/eleventy-base-blog/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/eleventy-base-blog/favicon-16x16.png">
+		<link rel="manifest" href="/eleventy-base-blog/site.webmanifest">
+		
+		<style>.postlist { counter-reset: start-from 3 }
+/* This is an arbitrary CSS string added to the bundle */
+/* work-sans-regular - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/work-sans-v18-latin-regular.woff2') format('woff2'),
+		url('/fonts/work-sans-v18-latin-regular.woff') format('woff');
+}
+
+/* work-sans-italic - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Work Sans';
+	font-style: italic;
+	font-weight: 400;
+	src: url('/fonts/work-sans-v18-latin-italic.woff2') format('woff2'),
+		url('/fonts/work-sans-v18-latin-italic.woff') format('woff');
+}
+
+/* work-sans-800 - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 800;
+	src: url('/fonts/work-sans-v18-latin-800.woff2') format('woff2'),
+		url('/fonts/work-sans-v18-latin-800.woff') format('woff');
+}
+
+/* work-sans-800italic - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Work Sans';
+	font-style: italic;
+	font-weight: 800;
+	src: url('/fonts/work-sans-v18-latin-800italic.woff2') format('woff2'),
+		url('/fonts/work-sans-v18-latin-800italic.woff') format('woff');
+}
+
+/* TODO: use more defaults in rest of css, replace with these vars */
+:root {
+	/* colors */
+	--text-color-black: #444444;
+	--gradient: linear-gradient(140deg, #5fc5b4 15%, #33ccff);
+	--gradient-alpha-light: linear-gradient(140deg,
+			rgba(95, 197, 180, 0.2) 15%,
+			rgba(51, 204, 255, 0.2));
+	--gradient-alpha-dark: linear-gradient(140deg,
+			rgba(95, 197, 180, 0.7) 15%,
+			rgba(51, 204, 255, 0.7));
+	--color-seaform: rgb(95, 197, 180);
+	--color-blue: #33ccff;
+
+	/* box shadows */
+	--shadow-large: 0 4px 16px rgba(0, 0, 0, 0.25);
+	--shadow-small: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+	/* themes */
+	--theme-light-bg: #ffffff;
+	--theme-light-text: #444444;
+	--theme-dark-bg: #444444;
+	--theme-dark-text: #ffffff;
+
+	/* design */
+	--content-width: 45em;
+	--frame-padding: 0 2em;
+
+	/* typography */
+	--font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	--font-family-monospace: ui-monospace, "Cascadia Code", SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+	--font-size-base: 18px;
+	/* --title-weight: 300;
+  --link-weight: 400;
+  --body-reg-weight: 400;
+  --body-bold-weight: 900; */
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-70: #555;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/*--text-color is assigned to --color-gray-_ above
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}*/
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	font-size: var(--font-size-base);
+	color: var(--text-color);
+	background-color: #b9f2f6;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+	max-width: var(--content-width);
+	margin: 0 auto;
+	padding: 1rem 2.2rem;
+	width: 100%;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-family);
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+p,
+li {
+	line-height: 1.6;
+}
+
+a {
+	color: var(--text-color-link);
+}
+
+a:visited {
+	color: var(--text-color-link-visited);
+}
+
+a:hover,
+a:active {
+	color: var(--text-color-link-active);
+}
+
+a:focus {
+	outline: dotted 2px var(--text-color-black);
+}
+
+a:active {
+	outline: none;
+}
+
+main :first-child {
+	margin-top: 0;
+}
+
+main a:hover,
+main a:active {
+	background-size: 100% 50%;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(var(--color-blue) 0%,
+		var(--color-blue) 100%);
+	text-decoration: none;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+
+.links-nextprev-prev {
+	padding-right: .5em;
+}
+
+.links-nextprev-next {
+	padding-left: .5em;
+}
+
+table {
+	margin: 1em 0;
+}
+
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375;
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+}
+
+code {
+	word-break: break-all;
+}
+
+p code {
+	background-color: var(--color-blue);
+	border-radius: 4px;
+	padding: 4px;
+	word-break: normal;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img {
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+p img {
+	object-fit: contain;
+	width: 100%;
+	max-height: 580px;
+}
+
+/* Header */
+header,
+footer {
+	/* background: var(--gradient-alpha-dark); */
+	padding: 1rem 0;
+	width: 100%;
+}
+
+/* header:after {
+	content: "";
+	display: table;
+	clear: both;
+} */
+
+.header-items {
+	max-width: var(--content-width);
+	margin: 0 auto;
+	padding: 0 2.2em;
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.home-link {
+	font-family: var(--font-family);
+	font-size: 1.4em;
+	font-weight: 700;
+	margin-right: 1em;
+	text-decoration: none;
+	padding: 4px 4px 4px 8px;
+	margin: -4px .8em -4px -4px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 4px;
+	transition: 200ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 3px 3px 0 var(--color-blue);
+	white-space: nowrap;
+}
+
+.home-link:focus {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.home-link:hover {
+	background-color: white;
+}
+
+.home-link:active {
+	position: relative;
+	top: 3px;
+	left: 3px;
+	background-color: white;
+	box-shadow: none;
+}
+
+.home-link[href][aria-current="page"] {
+	background-color: white;
+}
+
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: var(--font-family);
+	gap: 1em;
+	padding: 0;
+	margin: 0;
+}
+
+.nav a,
+footer a {
+	text-decoration: none;
+	transition: background-size 50ms ease-in-out;
+	background-size: 100% 30%;
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(var(--color-blue) 0%,
+			var(--color-blue) 100%);
+	white-space: nowrap;
+}
+
+.nav a:hover,
+footer a:hover {
+	color: var(--text-color);
+	background-size: 100% 100%;
+	background-position: 0 100%;
+	border-radius: 6px;
+	padding: 4px 4px;
+	margin: -4px -4px;
+}
+
+.nav a:active,
+.nav a:focus,
+footer a:active,
+footer a:focus {
+	background: rgba(255, 255, 255, 0.7);
+	background-position: 0 100%;
+	border-radius: 6px;
+	padding: 4px 4px;
+	margin: -4px -4px;
+}
+
+.nav a:active {
+	background: white;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+
+.nav a[href][aria-current="page"] {
+	background: white;
+	background-position: 0 100%;
+	border-radius: 6px;
+	padding: 4px 4px;
+	margin: -4px -4px;
+}
+
+/* Footer */
+footer {
+	margin: 0 auto;
+	padding: 1em 2.2em;
+	align-items: center;
+
+}
+
+footer p {
+	margin: 0;
+	text-align: center;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+
+.postlist li {
+	margin-bottom: .6em;
+}
+
+.postlist p {
+	margin-left: 2em;
+}
+
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em;
+	/* 13px /16 */
+	color: var(--color-gray-90);
+}
+
+.postlist-date {
+	word-spacing: -0.5px;
+}
+
+.postlist-link {
+	font-size: 1.1875em;
+	font-weight: 700;
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+.postlist-item>.post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.post-metadata time {
+	margin-right: 1em;
+}
+
+.post-featured-link {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+/* Direct Links / Markdown Headers */
+.header-anchor {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 1em;
+	margin-left: .1em;
+}
+
+a[href].header-anchor,
+a[href].header-anchor:visited {
+	color: transparent;
+}
+
+a[href].header-anchor:focus,
+a[href].header-anchor:hover {
+	text-decoration: underline;
+}
+
+a[href].header-anchor:focus,
+:hover>a[href].header-anchor {
+	color: #aaa;
+}
+
+h2+.header-anchor {
+	font-size: 1.5em;
+}
+
+/* Make navigation easier on phone screens */
+@media (max-width: 540px) {
+
+	nav {
+		width: 100%;
+	}
+	
+	.nav {
+		justify-content: space-between;
+	}
+}
+
+/* Reduce font-sizes for smaller phone screens */
+@media (max-width: 420px) {
+
+	.header-items {
+		padding: 0 1.2rem;
+	}
+
+	main {
+		font-size: .8em;
+		padding: 1rem 1.2rem;
+	}
+
+	footer,
+	.header-items {
+		font-size: .8em;
+	}
+
+}</style>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+		<header>
+			<div class="header-items">
+				<a href="/eleventy-base-blog/" class="home-link">David🥧</a>
+				<nav>
+					<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+					<ul class="nav">
+							<li class="nav-item"><a href="/eleventy-base-blog/blog/">Archive</a></li>
+							<li class="nav-item"><a href="/eleventy-base-blog/gallery/">Gallery</a></li>
+							<li class="nav-item"><a href="/eleventy-base-blog/notes/">Notes</a></li>
+							<li class="nav-item"><a href="/eleventy-base-blog/about/">About Me</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="tagged-video-games">Tagged “video games”</h1>
+
+
+
+<ol reversed="" class="postlist">
+	<li class="postlist-item">
+		<a href="/eleventy-base-blog/blog/2024-12-01-mystic-ark/" class="postlist-link">Mystic Ark</a>
+		<time class="postlist-date" datetime="2024-12-01">December 2024</time>
+	</li>
+	<li class="postlist-item">
+		<a href="/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/" class="postlist-link">Retro emulation done easy</a>
+		<time class="postlist-date" datetime="2024-06-26">June 2024</time>
+	</li>
+</ol>
+
+
+<p>See <a href="/eleventy-base-blog/tags/">all tags</a>.</p>
+
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p>Copyright &copy; 2024 ~ <a href="/eleventy-base-blog/feed/feed.xml">RSS</a> ~ Made with coffee, tea and <a href="https://www.11ty.dev/">Eleventy</a></p>
+		</footer>
+
+		<!-- This page `/tags/video-games/` was built on 2024-12-15T06:33:07.347Z -->
+		<script type="module" src="/eleventy-base-blog/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>

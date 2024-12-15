@@ -1,80 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
-	<title>David🥧</title>
-	<subtitle>Personal website of David Aaron Pierce, artist, occasional coder and video game liker.</subtitle>
-	<link href="https://davidaaronpierce.com/feed/feed.xml" rel="self"/>
-	<link href="https://davidaaronpierce.com/"/>
-	<updated>2023-04-18T00:00:00Z</updated>
-	<id>https://davidaaronpierce.com/</id>
-	<author>
-		<name>David Aaron Pierce</name>
-		<email>davidaaronpierce@gmail.com</email>
-	</author>
-	
-	<entry>
-		<title>favicon.io</title>
-		<link href="https://davidaaronpierce.com/blog/link-faviconio/"/>
-		<updated>2023-04-18T00:00:00Z</updated>
-		<id>https://davidaaronpierce.com/blog/link-faviconio/</id>
-		<content type="html">&lt;p&gt;Makes giving your website a favicon, the picture that appears in tabs and on Bookmarks, as easy as picking some options and clicking Download. What a great resource!&lt;/p&gt;
+<?xml-stylesheet href="pretty-atom-feed.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>David🥧</title>
+  <subtitle>This is a longer description about your blog.</subtitle>
+  <link href="https://davidaaronpierce.com/eleventy-base-blog/feed/feed.xml" rel="self" />
+  <link href="https://davidaaronpierce.com/eleventy-base-blog/" />
+  <updated>2024-12-01T00:00:00Z</updated>
+  <id>https://davidaaronpierce.com/eleventy-base-blog/</id>
+  <author>
+    <name>David Aaron Pierce</name>
+  </author>
+  <entry>
+    <title>Mystic Ark</title>
+    <link href="https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/" />
+    <updated>2024-12-01T00:00:00Z</updated>
+    <id>https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/</id>
+    <content type="html">&lt;p&gt;Never released outside of Japan, &lt;em&gt;Mystic Ark&lt;/em&gt; was always a curiosity to me since I discovered it from a single screenshot from Nintendo Power. It was a simple screen of the battle interface, taking inspiration from tabletop aesthetics with a sort of ornate board on which the characters and monsters were arranged.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://aeongenesis.net/projects/mysticark&quot;&gt;The game has long since received an excellent English translation from Aeon Genesis, found here&lt;/a&gt;.&lt;/p&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/99OzJ0W9ke-1920.avif 1920w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/99OzJ0W9ke-1920.webp 1920w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/99OzJ0W9ke-1920.png&quot; alt=&quot;A battle screenshot with the characters positioned on a board, with an abstract background&quot; width=&quot;1920&quot; height=&quot;1080&quot;&gt;&lt;/picture&gt;
+&lt;p&gt;Playing the game now as an adult, the tabletop battle screen is only one aspect of the game’s overall metatextual theme. The characters in your party are represented by figurines in the course of the game, and the various worlds you venture to are represented by objects in the shrine you start from. The figurines you find become imbued with life from the Arks, the world saving elementals that you collect throughout the game. Your main character is the center point on which everything else revolves around—it’s game over when the hero dies, and the ending of the game is the main character leaving the game world and you, the player awakening to the sounds of the modern world.&lt;/p&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/uPK0GzN8Vt-1920.avif 1920w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/uPK0GzN8Vt-1920.webp 1920w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/uPK0GzN8Vt-1920.png&quot; alt=&quot;Two pirate cats stand in front of the main character, saying &#39;Eh? Haven&#39;t seen you around here, meow! This ship is Captain Alonso&#39;s Bloodhook.&#39;&quot; width=&quot;1920&quot; height=&quot;1080&quot;&gt;&lt;/picture&gt;
+&lt;p&gt;The game is at its most joyous when you are exploring and making sense of each new world. Surreal landscapes and premises bring a lot of humor and charm to this game. Take for instance the first world: a desert where a war between rival pirate cats plays out. Or the world that is entirely within a horror mansion, complete with inane Resident Evil-style puzzles to solve. The breadth of ideas and variety of each world keeps the otherwise generic collect-the-things RPG plot fresh and novel.&lt;/p&gt;
+&lt;p&gt;The way the game works is very much in the fashion of Dragon Quest, with distinct character classes/skill sets and limited item inventory spaces. Additional party members, when you are able to give them life with the Arks, can only be revived by going back to the starting shrine to pick up their figurines again. Battle skills to buff your party become central to the bigger battles, but a useful Auto mode allows you to program a decently intelligent party for the swarms of random battles.&lt;/p&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/hWuRIliesT-1920.avif 1920w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/hWuRIliesT-1920.webp 1920w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/hWuRIliesT-1920.png&quot; alt=&quot;A pink cat in a room, with a dialog box. Matoya: Well, you took your dear sweet time, didn&#39;t you? I thought you&#39;d be a little swifter getting here.&quot; width=&quot;1920&quot; height=&quot;1080&quot;&gt;&lt;/picture&gt;
+&lt;p&gt;The scenarios generally consist of finding the right townspeople, going to a place to collect the right items and so on, but moreso than most Dragon Quests or Final Fantasies, there is often an element of trolling to some of the things the game asks from the player. Requests will end up taking more effort than anticipated, items may be found in random locations that are barely hinted at, finding the person you need could become a wild goose chase. The witch&#39;s tower in the first world really drives this all home to the player with hidden falling tiles at the top that will send you back to the very start.&lt;/p&gt;
+&lt;p&gt;If you&#39;re willing to put up with this (or are prepared to save-state your way through), you will find a charming, if a little long-in-the-tooth role playing game.&lt;/p&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/5ZRX0JewWg-1920.avif 1920w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/5ZRX0JewWg-1920.webp 1920w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-12-01-mystic-ark/5ZRX0JewWg-1920.png&quot; alt=&quot;A horned giant emerges from a hilly landscape as dawn breaks.&quot; width=&quot;1920&quot; height=&quot;1080&quot;&gt;&lt;/picture&gt;</content>
+  </entry>
+  <entry>
+    <title>Retro emulation done easy</title>
+    <link href="https://davidaaronpierce.com/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/" />
+    <updated>2024-06-26T00:00:00Z</updated>
+    <id>https://davidaaronpierce.com/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/</id>
+    <content type="html">&lt;p&gt;After a year enjoying the comfort of playing old games on my TV, I can fully recommend my retro gaming setup: a mini PC running Batocera Linux.&lt;/p&gt;
+&lt;p&gt;For a long time I&#39;ve been using a Raspberry Pi 3 running &lt;a href=&quot;https://retropie.org.uk/&quot;&gt;RetroPie&lt;/a&gt;, and it certainly got the job done on anything less powerful than the N64. But over time I was dealing with a lot of &lt;em&gt;little&lt;/em&gt; annoyances to this setup that just accumulated over the years.&lt;/p&gt;
+&lt;p&gt;A lot of it just came down to the defaults. &lt;strong&gt;I don&#39;t like Retropie&#39;s default settings.&lt;/strong&gt; Whenever I messed up a config or an update did something unexpected, I would end up needing to reinstall Retropie and go through the process of changing all the configurations back the way I needed to fit my needs. This meant an hour+ of setting up networking settings, finicky controller pairings, Retroarch configs and more.&lt;/p&gt;
+&lt;p&gt;Eventually, I moved over to &lt;a href=&quot;https://batocera.org/&quot;&gt;Batocera&lt;/a&gt;. &lt;em&gt;Everything just works&lt;/em&gt;, straight from the Linux image. If you have a semi-popular controller to use with it, chances are it&#39;ll just work correctly once you plug it in or set the controller to Bluetooth pairing mode. PS4 controller? That touch pad area is automatically configured to be a mouse or cursor depending on the system! If you don&#39;t want to mess with options and menus, chances are you&#39;ll be just fine with most of Batocera&#39;s defaults (though your hardware may nessesitate changing video/audio settings).&lt;/p&gt;
+&lt;p&gt;And for the things you do want to change, chances are it&#39;s in the main menu. All the things in Retropie that I had to manually tinker in config files and Retroarch are now just Batocera&#39;s main menu at the start. The interface is so polished, it&#39;s amazing that this is the work of hobbyists.&lt;/p&gt;
+&lt;p&gt;You don&#39;t even really have to mess with Retroarch&#39;s infamous UI to do things like set up resolution, video filters, save state settings, etc. Even core-specific settings can be accessed at the system level from these menus. Within a few minutes of flipping through settings on the main menu, I end up with an amazing retro gaming experience without ever touching Retroarch&#39;s UI.&lt;/p&gt;
+&lt;p&gt;So now that I&#39;m done gushing about Batocera, I found one more way to take the experience further: using a higher powered PC to play on. The old Pi 3 is good at the older stuff, but for some arcade games, Dreamcast games, PS2 and Gamecube, I needed more power.&lt;/p&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/1QuYWWKch--640.avif 640w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/1QuYWWKch--640.webp 640w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/1QuYWWKch--640.png&quot; alt=&quot;A screenshot from Shenmue (Dreamcast) with scanline filter&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;/picture&gt;
+&lt;p&gt;But not &lt;em&gt;that&lt;/em&gt; much power.&lt;/p&gt;
+&lt;p&gt;That&#39;s where online auctions come in. It turns out there are thousands of old, under-utilized mini PCs that will fit neatly next to your other consoles and television, and cost under $100 that are pleanty powerful enough to run your favorite 3D retro games.&lt;/p&gt;
+&lt;p&gt;Stick Batocera on one of these modest 6+ year old machines with laptop components and this will beat any Raspberry Pi retro gaming setup.&lt;/p&gt;
+&lt;p&gt;It&#39;s not a MiSTer, but perfect hardware recreation is not something I can personally discern from modern emulators running on powerful enough computers. If you notice the difference in sound or timing, that&#39;s actually pretty amazing--but for me, an $80 computer and a few different controllers depending on the system get me all the way there.&lt;/p&gt;
+&lt;p&gt;Last thing: save states are a big deal to me and one of my favorite features of this setup is &lt;strong&gt;&amp;quot;Auto Save/Load&amp;quot;&lt;/strong&gt;. Turn it on, and you can start and leave your games at any time, and just resume from where you left off without worrying about in-game saves or manually saving and loading states. In my busier days it feels good to get in a few minutes of a game, and then be able to get back to it later, no fuss.&lt;/p&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/vkj13V4YWJ-1920.avif 1920w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/vkj13V4YWJ-1920.webp 1920w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://davidaaronpierce.com/eleventy-base-blog/blog/2024-06-26-retro-emulation-done-easy/vkj13V4YWJ-1920.png&quot; alt=&quot;A screenshot from Ys 3 with the text &#39;To be continued&#39;&quot; width=&quot;1920&quot; height=&quot;1080&quot;&gt;&lt;/picture&gt;</content>
+  </entry>
+  <entry>
+    <title>Rollback to the old</title>
+    <link href="https://davidaaronpierce.com/eleventy-base-blog/blog/2024-05-10-rollback-to-the-old/" />
+    <updated>2024-05-10T00:00:00Z</updated>
+    <id>https://davidaaronpierce.com/eleventy-base-blog/blog/2024-05-10-rollback-to-the-old/</id>
+    <content type="html">&lt;p&gt;Lately, between the iPad Pro ad and AI, I&#39;ve been thinking about new technology and practicing the art of planting my feet down and saying, &amp;quot;this is perfect for my needs.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Recently, that new iPad commercial with the crusher (no I&#39;m not linking to it) has caught a lot of scrutiny amongst &lt;em&gt;those in the tech world&lt;/em&gt;. It&#39;s funny for such a simple throwaway thing like an ad for some new consumer technology to get such ire; many ads are similarly dumb. But then again, Apple &lt;a href=&quot;https://www.youtube.com/watch?v=VtvjbmoDx-I&quot;&gt;has always put an emphasis on marketing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The message was probably supposed to be: &lt;em&gt;music, art, entertainment, it does it all!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;But what we end up seeing is: &lt;strong&gt;human creativity and craft destroyed and commodified into a flat piece of metal.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There hasn&#39;t been a &lt;em&gt;truer&lt;/em&gt; metaphor for the tech industry&#39;s light-speed crash into generative AI. All of human history dumped into a &lt;a href=&quot;https://www.nature.com/articles/d41586-024-00478-x&quot;&gt;costly&lt;/a&gt;, &lt;a href=&quot;https://futurism.com/the-byte/microsoft-arizona-water-ai&quot;&gt;water-guzzling environmental hazard&lt;/a&gt;, just so we can write a prompt and end up with a goofy bi-product of statistical analysis. The continual outputtings of OpenAI and Google simply do not solve real-world needs or problems; they&#39;re inefficient, environmentally destructive and yet they still require expert human proof-reading. What they do create is &lt;em&gt;gobs of useless content&lt;/em&gt; that Google&#39;s own search engine (among others) is powerless to weed through.&lt;/p&gt;
+&lt;p&gt;Thankfully, Apple seems less invested in gen AI than others, but the metaphor in this ad is still there. I&#39;m hoping its day as Twitter&#39;s main character has taught Apple a small lesson.&lt;/p&gt;
+&lt;h2 id=&quot;wait-wait-what-about-that-ipad-pro-though&quot;&gt;Wait, wait, what about that iPad Pro though?&lt;/h2&gt;
+&lt;p&gt;You do not need the new iPad Pro. You don&#39;t even need the most recent regular iPad to do all these things.&lt;/p&gt;
+&lt;p&gt;Guess what? For under $350 you can get a discounted gen 9 iPad, a gen 1 Pencil, Procreate and have yourself a lovely drawing tablet with one of the best feeling pressure-sensitive pens on the market, that is capable of doing large works at 300 dpi with 10+ layers. $50 extra will get you a keyboard and mouse to pair with it, and voilà, you now have an extremely affordable computing device that is more capable than any laptop at a similar price point.&lt;/p&gt;
+&lt;p&gt;Don&#39;t get the latest and greatest. Embrace efficiency and use what works.&lt;/p&gt;
 </content>
-	</entry>
-	
-	<entry>
-		<title>google-webfonts-helper</title>
-		<link href="https://davidaaronpierce.com/blog/link-google-webfonts-helper/"/>
-		<updated>2023-03-21T00:00:00Z</updated>
-		<id>https://davidaaronpierce.com/blog/link-google-webfonts-helper/</id>
-		<content type="html">&lt;p&gt;This site makes it easy to set up self-hosting Google Fonts. Although Google gives you code to download fonts from their servers, hosting the fonts yourself reduces the requests and should ever-so-slightly bump up the loading speed of your site.&lt;/p&gt;
+  </entry>
+  <entry>
+    <title>favicon.io</title>
+    <link href="https://davidaaronpierce.com/eleventy-base-blog/blog/link-faviconio/" />
+    <updated>2023-04-18T00:00:00Z</updated>
+    <id>https://davidaaronpierce.com/eleventy-base-blog/blog/link-faviconio/</id>
+    <content type="html">&lt;p&gt;Makes giving your website a favicon, the picture that appears in tabs and on Bookmarks, as easy as picking some options and clicking Download. What a great resource!&lt;/p&gt;
 </content>
-	</entry>
-	
-	<entry>
-		<title>Playing Epic Store Games on a Steam Link</title>
-		<link href="https://davidaaronpierce.com/blog/link-epic-games-on-steam-link/"/>
-		<updated>2023-03-10T00:00:00Z</updated>
-		<id>https://davidaaronpierce.com/blog/link-epic-games-on-steam-link/</id>
-		<content type="html">&lt;p&gt;I have a Raspberry Pi emulator running retro games, but lately I&#39;ve also been running Steam Link on it to play some PC games (FF pixel remasters are really meant for a big screen TV). &lt;a href=&quot;https://seanzwrites.com/posts/how-to-play-epic-games-on-steam-and-steamlink/&quot;&gt;In this article&lt;/a&gt;, Sean Z goes step by step how to put Epic Game Store games on the Steam Link as well.&lt;/p&gt;
+  </entry>
+  <entry>
+    <title>google-webfonts-helper</title>
+    <link href="https://davidaaronpierce.com/eleventy-base-blog/blog/link-google-webfonts-helper/" />
+    <updated>2023-03-21T00:00:00Z</updated>
+    <id>https://davidaaronpierce.com/eleventy-base-blog/blog/link-google-webfonts-helper/</id>
+    <content type="html">&lt;p&gt;This site makes it easy to set up self-hosting Google Fonts. Although Google gives you code to download fonts from their servers, hosting the fonts yourself reduces the requests and should ever-so-slightly bump up the loading speed of your site.&lt;/p&gt;
 </content>
-	</entry>
-	
-	<entry>
-		<title>rpilocator</title>
-		<link href="https://davidaaronpierce.com/blog/link-rpilocator/"/>
-		<updated>2023-03-01T00:00:00Z</updated>
-		<id>https://davidaaronpierce.com/blog/link-rpilocator/</id>
-		<content type="html">&lt;p&gt;Updates when new stock of Raspberry Pi&#39;s become available at retailers. No price gouging here, but you do have to keep up--with the ongoing shortages, stock doesn&#39;t stay around for very long.&lt;/p&gt;
+  </entry>
+  <entry>
+    <title>Playing Epic Store Games on a Steam Link</title>
+    <link href="https://davidaaronpierce.com/eleventy-base-blog/blog/link-epic-games-on-steam-link/" />
+    <updated>2023-03-10T00:00:00Z</updated>
+    <id>https://davidaaronpierce.com/eleventy-base-blog/blog/link-epic-games-on-steam-link/</id>
+    <content type="html">&lt;p&gt;I have a Raspberry Pi emulator running retro games, but lately I&#39;ve also been running Steam Link on it to play some PC games (FF pixel remasters are really meant for a big screen TV). &lt;a href=&quot;https://seanzwrites.com/posts/how-to-play-epic-games-on-steam-and-steamlink/&quot;&gt;In this article&lt;/a&gt;, Sean Z goes step by step how to put Epic Game Store games on the Steam Link as well.&lt;/p&gt;
 </content>
-	</entry>
-	
-	<entry>
-		<title>A new website, made in the web</title>
-		<link href="https://davidaaronpierce.com/blog/2023-03-01-new-website/"/>
-		<updated>2023-03-01T00:00:00Z</updated>
-		<id>https://davidaaronpierce.com/blog/2023-03-01-new-website/</id>
-		<content type="html">&lt;p&gt;It&#39;s 2023 and you need your own website. Today, there are enough free tools online that you can entirely build yourself a new website, host it and maintain it completely through a web browser.&lt;/p&gt;
+  </entry>
+  <entry>
+    <title>rpilocator</title>
+    <link href="https://davidaaronpierce.com/eleventy-base-blog/blog/link-rpilocator/" />
+    <updated>2023-03-01T00:00:00Z</updated>
+    <id>https://davidaaronpierce.com/eleventy-base-blog/blog/link-rpilocator/</id>
+    <content type="html">&lt;p&gt;Updates when new stock of Raspberry Pi&#39;s become available at retailers. No price gouging here, but you do have to keep up--with the ongoing shortages, stock doesn&#39;t stay around for very long.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>A new website, made in the web</title>
+    <link href="https://davidaaronpierce.com/eleventy-base-blog/blog/2023-03-01-new-website/" />
+    <updated>2023-03-01T00:00:00Z</updated>
+    <id>https://davidaaronpierce.com/eleventy-base-blog/blog/2023-03-01-new-website/</id>
+    <content type="html">&lt;p&gt;It&#39;s 2023 and you need your own website. Today, there are enough free tools online that you can entirely build yourself a new website, host it and maintain it completely through a web browser.&lt;/p&gt;
 &lt;p&gt;The modern web has mostly become four websites the past couple decades. They are powerful websites most everyone frequents, and arguably the easiest way for someone to make a name for themselves. But they are also controlled by megalomaniacs who value unlimited growth above your content and space.&lt;/p&gt;
 &lt;p&gt;But there will always be a place for your own unique presence that cannot be controlled by someone else. A place that you can really make your own.&lt;/p&gt;
 &lt;p&gt;My website is largely built and maintained &lt;em&gt;within&lt;/em&gt; the browser, and although I keep a copy of the repository on my own hard drive, ultimately most of my time spent on it has been remotely. I&#39;m going to walk through how I do it.&lt;/p&gt;
-&lt;h2 id=&quot;11ty-to-github&quot; tabindex=&quot;-1&quot;&gt;11ty to GitHub &lt;a class=&quot;header-anchor&quot; href=&quot;https://davidaaronpierce.com/blog/2023-03-01-new-website/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;11ty-to-github&quot;&gt;11ty to GitHub&lt;/h2&gt;
 &lt;p&gt;I started with a static site generator, &lt;strong&gt;&lt;a href=&quot;https://www.11ty.dev/&quot;&gt;11ty&lt;/a&gt;&lt;/strong&gt;, and used their &lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;starter blog&lt;/a&gt;, which allows you to get up and running with a simple blog website.&lt;/p&gt;
 &lt;p&gt;I made my own repository on &lt;strong&gt;GitHub&lt;/strong&gt; using the starter as a template, and from there I began tinkering with the code and layouts using GitHub&#39;s Codespaces. Basically, it opens VS Code on your browser and you can just start working on the site right there. The terminal is fully functional, and so you can just run&lt;/p&gt;
 &lt;pre class=&quot;language-bash&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;npx @11ty/eleventy &lt;span class=&quot;token parameter variable&quot;&gt;--serve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;and GitHub will serve up a live updated version of your site, and give you a link to view it as you work. Move that tab over to its own window on the other side of your desktop and you can work and watch the site change.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note that you only get 60 hours of Codespaces time on the free plan&lt;/em&gt;, so if you&#39;re done designing your site and don&#39;t need a live preview anymore, you can use &lt;a href=&quot;https://github.dev/&quot;&gt;https://github.dev/&lt;/a&gt; to make changes to your codebase and make new posts.&lt;/p&gt;
-&lt;h2 id=&quot;github-to-netlify&quot; tabindex=&quot;-1&quot;&gt;GitHub to Netlify &lt;a class=&quot;header-anchor&quot; href=&quot;https://davidaaronpierce.com/blog/2023-03-01-new-website/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;github-to-netlify&quot;&gt;GitHub to Netlify&lt;/h2&gt;
 &lt;p&gt;Once I had a decent looking site made on Codespaces, I commited my work to my personal repository, and then went to &lt;strong&gt;&lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify&lt;/a&gt;&lt;/strong&gt; for free web hosting. I don&#39;t get a ton of traffic, so the free plan works great for my blog. On your Netlify account, you can log in with GitHub and just directly deploy your website&#39;s repository. Since I have a domain name, I set that up on the &lt;strong&gt;Domain Management&lt;/strong&gt; settings in Netlify, and within a day I had my new website on my address.&lt;/p&gt;
-&lt;h2 id=&quot;github-pages&quot; tabindex=&quot;-1&quot;&gt;GitHub Pages &lt;a class=&quot;header-anchor&quot; href=&quot;https://davidaaronpierce.com/blog/2023-03-01-new-website/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;github-pages&quot;&gt;GitHub Pages&lt;/h2&gt;
 &lt;p&gt;While Netlify does a great job of just building and deploying a site with no fuss, maybe you don&#39;t want another site to log into. Instead, you can host your website using GitHub for free by naming your website repository &lt;strong&gt;&amp;lt;username&amp;gt;.github.io&lt;/strong&gt; and tinker with &lt;a href=&quot;https://docs.github.com/en/actions&quot;&gt;&lt;strong&gt;GitHub Actions&lt;/strong&gt;&lt;/a&gt;. After some effort setting up your workflow, your website will become public at &lt;strong&gt;http://&amp;lt;username&amp;gt;.github.io&lt;/strong&gt; and that can be your new, free home on the internet.&lt;/p&gt;
 &lt;p&gt;This is the config I used to build my 11ty site using &lt;strong&gt;11ty-dockerless-build&lt;/strong&gt;, and then deploy on GitHub Pages using &lt;strong&gt;actions-gh-pages&lt;/strong&gt;. The &lt;code&gt;github_token&lt;/code&gt; part at the end can be a bit tricky and will require some setup in your Github account and repository settings. &lt;a href=&quot;https://github.com/peaceiris/actions-gh-pages&quot;&gt;You can get more info about the deploy step here&lt;/a&gt;.&lt;/p&gt;
-&lt;pre class=&quot;language-yml&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Eleventy Build&lt;br&gt;&lt;span class=&quot;token key atrule&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;push&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&quot;token key atrule&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token key atrule&quot;&gt;build_deploy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token key atrule&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ubuntu&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;latest&lt;br&gt;    &lt;span class=&quot;token key atrule&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; actions/checkout@master&lt;br&gt;      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Build&lt;br&gt;        &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; extrawitz/11ty&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;dockerless&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;build@v1&lt;br&gt;      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Deploy&lt;br&gt;        &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; peaceiris/actions&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;gh&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;pages@v3&lt;br&gt;        &lt;span class=&quot;token key atrule&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;br&gt;          &lt;span class=&quot;token key atrule&quot;&gt;publish_dir&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; _site&lt;br&gt;          &lt;span class=&quot;token key atrule&quot;&gt;publish_branch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; gh&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;pages&lt;br&gt;          &lt;span class=&quot;token key atrule&quot;&gt;github_token&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; (your auth goes here)&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;alternatives&quot; tabindex=&quot;-1&quot;&gt;Alternatives &lt;a class=&quot;header-anchor&quot; href=&quot;https://davidaaronpierce.com/blog/2023-03-01-new-website/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class=&quot;language-yml&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Eleventy Build
+&lt;span class=&quot;token key atrule&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;push&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;token key atrule&quot;&gt;jobs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token key atrule&quot;&gt;build_deploy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;runs-on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; ubuntu&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;latest
+    &lt;span class=&quot;token key atrule&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; actions/checkout@master
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Build
+        &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; extrawitz/11ty&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;dockerless&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;build@v1
+      &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Deploy
+        &lt;span class=&quot;token key atrule&quot;&gt;uses&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; peaceiris/actions&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;gh&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;pages@v3
+        &lt;span class=&quot;token key atrule&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;token key atrule&quot;&gt;publish_dir&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; _site
+          &lt;span class=&quot;token key atrule&quot;&gt;publish_branch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; gh&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;pages
+          &lt;span class=&quot;token key atrule&quot;&gt;github_token&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; (your auth goes here)&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;alternatives&quot;&gt;Alternatives&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://gitlab.com/&quot;&gt;GitLab&lt;/a&gt;&lt;/strong&gt; will work similarly to GitHub, as it can also run VS Code in the browser, and they also have GitPod, which allows live updating just like Codespaces. Additionally, GitLab Pages can deploy and host your site with an arguably easier setup than GitHub.&lt;/p&gt;
 &lt;p&gt;I&#39;ve also seen &lt;strong&gt;&lt;a href=&quot;https://glitch.com/&quot;&gt;Glitch&lt;/a&gt;&lt;/strong&gt; used not only to code and build things with a more accessible interface, but also to deploy and host websites. It looks very easy to set up and use, as it has everything built-in. There&#39;s even a &lt;a href=&quot;https://glitch-hello-eleventy.glitch.me/&quot;&gt;pre-made 11ty Glitch project&lt;/a&gt; that you can get started with in seconds.&lt;/p&gt;
-&lt;h2 id=&quot;final-thoughts&quot; tabindex=&quot;-1&quot;&gt;Final thoughts &lt;a class=&quot;header-anchor&quot; href=&quot;https://davidaaronpierce.com/blog/2023-03-01-new-website/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h2&gt;
 &lt;p&gt;Social media as a whole isn&#39;t going anywhere. But the big sites are constantly changing their Terms of Service and rules, they shift their values, and sell advertising with your content. I think it&#39;s important to have your own place on the internet with the words, images, videos and other things that you care about, that a massive company cannot dictate or remove on the whim of its shareholders.&lt;/p&gt;
 &lt;p&gt;While we are using services to set this website up that are controlled by companies, ultimately what we&#39;re making is a git repository that you can maintain copies of on your own hard drive and in multiple clouds.&lt;/p&gt;
 &lt;p&gt;This is your site, your data, and if you need to take it somewhere else because Netlify or GitHub go away, it&#39;ll be pretty easy to do so.&lt;/p&gt;
 </content>
-	</entry>
+  </entry>
 </feed>
