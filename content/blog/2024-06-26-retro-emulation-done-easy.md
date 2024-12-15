@@ -8,12 +8,10 @@ tags:
   - retro
   - emulation
 featuredImage: "images/2024-06-26-retro-emu-shadow.png"
-featuredImageAlt: "A screenshot of Shadow of the Colossus (PS2): the hero rides a horse through a grassy field with ruins in the distance."
+featuredImageAlt: "A screenshot of Shadow of the Colossus (PS2)"
 ---
 
 After a year enjoying the comfort of playing old games on my TV, I can fully recommend my retro gaming setup: a mini PC running Batocera Linux.
-
----
 
 For a long time I've been using a Raspberry Pi 3 running [RetroPie](https://retropie.org.uk/), and it certainly got the job done on anything less powerful than the N64. But over time I was dealing with a lot of *little* annoyances to this setup that just accumulated over the years.
 
@@ -27,7 +25,7 @@ You don't even really have to mess with Retroarch's infamous UI to do things lik
 
 So now that I'm done gushing about Batocera, I found one more way to take the experience further: using a higher powered PC to play on. The old Pi 3 is good at the older stuff, but for some arcade games, Dreamcast games, PS2 and Gamecube, I needed more power.
 
-{% image "images/2024-06-26-retro-emu-shenmue.png", "A screenshot from Shenmue (Dreamcast) with scanline filter" %}
+<img src="images/2024-06-26-retro-emu-shenmue.png" alt="A screenshot from Shenmue (Dreamcast) with scanline filter">
 
 But not *that* much power.
 
@@ -39,4 +37,4 @@ It's not a MiSTer, but perfect hardware recreation is not something I can person
 
 Last thing: save states are a big deal to me and one of my favorite features of this setup is **"Auto Save/Load"**. Turn it on, and you can start and leave your games at any time, and just resume from where you left off without worrying about in-game saves or manually saving and loading states. In my busier days it feels good to get in a few minutes of a game, and then be able to get back to it later, no fuss.
 
-{% image "images/2024-06-26-retro-emu-ys3.png", "A screenshot from Ys 3 with the text 'To be continued'" %}
+<img src="images/2024-06-26-retro-emu-ys3.png" alt="A screenshot from Ys 3 with the text 'To be continued'">

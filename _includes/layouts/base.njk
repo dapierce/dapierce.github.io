@@ -3,14 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ metadata.title }}{% if title %} - {{ title }}{% endif %}</title>
+		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
+		<link rel="me" href="https://bsky.app/profile/dapierce.bsky.social">
 		<link rel="me" href="https://mastodon.social/@dapierce">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
-		{#- Atom and JSON feeds included by default #}
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
-		
 		{# Preload non-italic fonts #}
 		<link rel="preload" as="font" type="font/woff2" href="/fonts/work-sans-v18-latin-regular.woff2" crossorigin>
 		<link rel="preload" as="font" type="font/woff2" href="/fonts/work-sans-v18-latin-800.woff" crossorigin>
@@ -20,29 +18,35 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
-		
-		{#- Google fonts #}
-		{# <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">		 #}
-		
+
+		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
+		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+
 		{#-
-		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
-		1. You can add to them using `{% css %}`
-		2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
-		3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
-		4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
+		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
+		1. CSS:
+			* Add to a per-page bundle using `{% css %}{% endcss %}`
+			* Retrieve bundle content using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
+		2. Or for JavaScript:
+			* Add to a per-page bundle using `{% js %}{% endjs %}`
+			* Retrieve via `{% getBundle "js" %}` or `{% getBundleFileUrl "js" %}`
+		3. Learn more: https://github.com/11ty/eleventy-plugin-bundle
 		#}
 
 		{#- Add an arbitrary string to the bundle #}
-		{# {%- css %}* { box-sizing: border-box; }{% endcss %} #}
+		{%- css %}/* This is an arbitrary CSS string added to the bundle */{% endcss %}
 		{#- Add the contents of a file to the bundle #}
 		{%- css %}{% include "public/css/index.css" %}{% endcss %}
-		{#- Or add from node_modules #}
+		{#- Or you can add from node_modules #}
 		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
-		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
+		{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
 		<style>{% getBundle "css" %}</style>
+		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
+		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
+
+		{#- Add the heading-anchors web component to the JavaScript bundle #}
+		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -54,22 +58,25 @@
 				<nav>
 					<h2 class="visually-hidden">Top level navigation menu</h2>
 					<ul class="nav">
-					{%- for entry in collections.all | eleventyNavigation %}
-						<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-					{%- endfor %}
+						{%- for entry in collections.all | eleventyNavigation %}
+							<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+						{%- endfor %}
 					</ul>
 				</nav>
 			</div>
 		</header>
 
 		<main id="skip">
-			{{ content | safe }}
+			<heading-anchors>
+				{{ content | safe }}
+			</heading-anchors>
 		</main>
 
 		<footer>
 			<p>Copyright &copy; 2024 ~ <a href="/feed/feed.xml">RSS</a> ~ Made with coffee, tea and <a href="https://www.11ty.dev/">Eleventy</a></p>
 		</footer>
 
-		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
+		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
+		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
 	</body>
 </html>

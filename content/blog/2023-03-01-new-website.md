@@ -8,7 +8,6 @@ tags:
 ---
 
 It's 2023 and you need your own website. Today, there are enough free tools online that you can entirely build yourself a new website, host it and maintain it completely through a web browser.
----
 
 The modern web has mostly become four websites the past couple decades. They are powerful websites most everyone frequents, and arguably the easiest way for someone to make a name for themselves. But they are also controlled by megalomaniacs who value unlimited growth above your content and space.
 

@@ -11,7 +11,6 @@ tags:
 ---
 
 Lately, between the iPad Pro ad and AI, I've been thinking about new technology and practicing the art of planting my feet down and saying, "this is perfect for my needs."
----
 
 Recently, that new iPad commercial with the crusher (no I'm not linking to it) has caught a lot of scrutiny amongst *those in the tech world*. It's funny for such a simple throwaway thing like an ad for some new consumer technology to get such ire; many ads are similarly dumb. But then again, Apple [has always put an emphasis on marketing](https://www.youtube.com/watch?v=VtvjbmoDx-I).
 

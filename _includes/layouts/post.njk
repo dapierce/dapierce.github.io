@@ -1,14 +1,13 @@
 ---
 layout: layouts/base.njk
 ---
-{# Only include the syntax highlighter CSS on blog posts #}
+{# Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle #}
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
-{%- css %}{% include "public/css/code.css" %}{%- endcss %}
 <h1>{{ title }}</h1>
 
 {# Add the featured image to the top if its in the head space #}
-{% if featuredImage %}<p>{% image featuredImage, featuredImageAlt %}</p>{% endif %}
+{% if featuredImage %}<p><img src={{ featuredImage }} alt="{{ featuredImageAlt }}"></p>{% endif %}
 
 <ul class="post-metadata">
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
@@ -18,7 +17,7 @@ layout: layouts/base.njk
 	{%- endfor %}
 </ul>
 {# Add the featured link to the top if its in the head space #}
-{% if featuredLink %}<ul class="post-featured-link"><li>Link: <a href="{{ featuredLink }}">{{ featuredLink }}</a></li></ul>{% endif %}
+{% if featuredLink %}<ul class="post-featured-link"><li><strong>Link:</strong> <a href="{{ featuredLink }}">{{ featuredLink }}</a></li></ul>{% endif %}
 
 {{ content | safe }}
 
@@ -27,8 +26,8 @@ layout: layouts/base.njk
 {%- set nextPost = collections.posts | getNextCollectionItem %}
 {%- if nextPost or previousPost %}
 <ul class="links-nextprev">
-	{%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-	{%- if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+	{%- if previousPost %}<li class="links-nextprev-prev">← Previous<br> <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+	{%- if nextPost %}<li class="links-nextprev-next">Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
 </ul>
 {%- endif %}
 {%- endif %}
