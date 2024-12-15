@@ -2,7 +2,7 @@
 <?xml-stylesheet href="pretty-atom-feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>David🥧</title>
-  <subtitle>This is a longer description about your blog.</subtitle>
+  <subtitle>Personal website of David Aaron Pierce, artist, occasional coder and video game liker.</subtitle>
   <link href="https://davidaaronpierce.com/feed/feed.xml" rel="self" />
   <link href="https://davidaaronpierce.com/" />
   <updated>2024-12-01T00:00:00Z</updated>
